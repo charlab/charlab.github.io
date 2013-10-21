@@ -1,7 +1,9 @@
 ---
 layout: post
 category : lessons
+title: "Jekyll Introduction"
 tagline: "Supporting tagline"
+author: jspjut
 tags : [intro, beginner, jekyll, tutorial]
 ---
 {% include JB/setup %}

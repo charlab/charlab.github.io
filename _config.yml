@@ -8,14 +8,31 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Jekyll Bootstrap
-tagline: Site Tagline
+title : CHAR Lab
+tagline: Computing Hardware and Architecture Research
 author :
-  name : Name Lastname
-  email : blah@email.test
-  github : username
-  twitter : username
-  feedburner : feedname
+  name : CHAR Lab
+  email : charlab@hmc.edu
+  github : charlab
+#  twitter : charlab
+#  feedburner : feedname
+
+# List of authors for people page
+author_ids: [jspjut]
+# Author section for multiple author info
+post_authors :
+  jspjut :
+    display_name : Josef Spjut
+    job_title : Professor
+    bio : 'Josef is a professor of engineering at Harvey Mudd College
+        and a consulting researcher for NVIDIA. He received his Ph.D. from
+	University of Utah and his B.S in Computer Engineering from
+    	University of California Riverside.'
+    email : jspjut@g.hmc.edu
+    web : http://jspjut.github.io/
+    twitter : josefspjut
+    github : jspjut
+    linkedin : josefspjut
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -25,7 +42,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://username.github.io
+production_url : http://charlab.github.io
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -82,7 +99,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : jekyllbootstrap
+      short_name : charlab
     livefyre :
       site_id : 123
     intensedebate :
@@ -98,7 +115,7 @@ JB :
   # Set 'provider' to false to turn analytics off globally.
   #        
   analytics :
-    provider : google 
+    provider : false 
     google : 
         tracking_id : 'UA-123-12'
     getclicky :
@@ -115,7 +132,7 @@ JB :
   # Set 'provider' to false to turn sharing off globally.
   #
   sharing :
-    provider : false
+    provider : tweet
     
   # Settings for all other include helpers can be defined by creating 
   # a hash with key named for the given helper. ex:

@@ -1,9 +1,11 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: CHAR Lab
+tagline: Computing Research
 ---
 {% include JB/setup %}
+
+# This is a website in progress!
 
 Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
 

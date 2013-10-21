@@ -2,10 +2,18 @@
   <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
 </div>
 
+{% assign post_author = site.post_authors[page.author] %}
 <div class="row-fluid post-full">
   <div class="span12">
     <div class="date">
-      <span>{{ page.date | date_to_long_string }}</span>
+      {% if post_author %}
+        {% if post_author.web %}
+          By <a href="{{ post_author.web }}">{{ post_author.display_name }}</a> on
+        {% else %}
+          By {{ post_author.display_name }} on
+        {% endif %}
+      {% endif %}
+      {{ page.date | date_to_long_string }}
     </div>
     <div class="content">
       {{ content }}
