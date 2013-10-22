@@ -14,6 +14,7 @@
          </a> -->
     <h3>{{ post_author.display_name }}</h3>
     <p class="muted">{{ post_author.job_title }}
+    <a name="{{ author_id }}"></a>
       {% if post_author.web %}
       | <a href="{{ post_author.web }}">web page</a>
       {% endif %}

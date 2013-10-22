@@ -14,20 +14,19 @@ classwork and projects for new undergraduate learning experiences.
 This website exists as a way for the participating students to post
 updates as they make progress.
 
-This website is still in progress...
-    
-## Sample Posts
-
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
-
-    $ rm -rf _posts/core-samples
-
-Here's a sample "posts list".
+## Recent Blog Posts
 
 <ul class="posts">
   {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+    <li><span>{{ post.date | date_to_string }}</span> 
+      <span>
+	{% if post.author %}
+	{% assign post_author = site.post_authors[post.author] %}
+	<a href="{{ site.url }}/people.html#{{ post.author }}">
+	{{ post_author.display_name }}</a>
+	{% endif %}
+      </span>&raquo; 
+    <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
 
