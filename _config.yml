@@ -18,7 +18,7 @@ author :
 #  feedburner : feedname
 
 # List of authors for people page
-author_ids: [jspjut]
+author_ids: [jspjut, dhpark, vkanwar, estorm, smourad, fhannan]
 # Author section for multiple author info
 post_authors :
   jspjut :
@@ -35,6 +35,51 @@ post_authors :
     linkedin : josefspjut
 # email, web, twitter, github, linkedin all optional
 # recommended student job_title as "B.S. Engineering 2015"
+  dhpark :
+    display_name : Dong-heyon Park
+    job_title : B.S. Engineering 2014
+    bio : 'Dong-hyeon has taken MicroPs'
+    email : 
+    web : 
+    twitter : 
+    github : 
+    linkedin : 
+  vkanwar :
+    display_name : Varun Kanwar
+    job_title : B.S. Engineering 2014
+    bio : 'Varun is taking MicroPs'
+    email : 
+    web : 
+    twitter : 
+    github : 
+    linkedin : 
+  estorm :
+    display_name : Eric Storm
+    job_title : B.S. Engineering 2015
+    bio : 'Eric is taking MicroPs'
+    email : 
+    web : 
+    twitter : 
+    github : 
+    linkedin : 
+  smourad :
+    display_name : Sami Mourad
+    job_title : B.S. Engineering 2014
+    bio : 'Sami is taking MicroPs.'
+    email : 
+    web : 
+    twitter : 
+    github : 
+    linkedin : 
+  fhannan :
+    display_name : Fabiha Hannan
+    job_title : B.S. Engineering 2016
+    bio : 'Fabiha is taking E85.'
+    email : 
+    web : 
+    twitter : 
+    github : 
+    linkedin : 
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 

@@ -8,7 +8,7 @@
     <div class="date">
       {% if post_author %}
         {% if post_author.web %}
-          By <a href="{{ site.url }}/people.html#{{ post.author }}">{{ post_author.display_name }}</a> on
+          By <a href="{{ site.url }}/people.html#{{ page.author }}">{{ post_author.display_name }}</a> on
         {% else %}
           By {{ post_author.display_name }} on
         {% endif %}
