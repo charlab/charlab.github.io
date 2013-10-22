@@ -36,7 +36,7 @@ post_authors :
 # email, web, twitter, github, linkedin all optional
 # recommended student job_title as "B.S. Engineering 2015"
   dhpark :
-    display_name : Dong-heyon Park
+    display_name : Dong-hyeon Park
     job_title : B.S. Engineering 2014
     bio : 'Dong-hyeon has taken MicroPs'
     email : 

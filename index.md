@@ -16,19 +16,16 @@ updates as they make progress.
 
 ## Recent Blog Posts
 
-<ul class="posts">
-  {% for post in site.posts %}
+  <ul class="posts">
+  {% for post in site.posts limit:10 %}
     <li><span>{{ post.date | date_to_string }}</span> 
       <span>
-	{% if post.author %}
 	{% assign post_author = site.post_authors[post.author] %}
 	<a href="{{ site.url }}/people.html#{{ post.author }}">
-	{{ post_author.display_name }}</a>
-	{% endif %}
-      </span>&raquo; 
+	  {{ post_author.display_name }}</a>
+      </span>&raquo;
     <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
-</ul>
-
+  </ul>
 
 

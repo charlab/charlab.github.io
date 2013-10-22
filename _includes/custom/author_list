@@ -7,13 +7,14 @@
   {% for author_id in author_ids %}
   {% assign post_author = site.post_authors[author_id] %}
   <div id="{{ author_id }}" class="author">
-    {% if author_id != 'jspjut' %} <hr> {% endif %}
+    {% unless forloop.first %} <hr> {% endunless %}
     <!-- add image here
          <a href="{{ post_author.web }}">
 	   <span width="150" height="150">Image!</span>
          </a> -->
     <h3>{{ post_author.display_name }}</h3>
     <p class="muted">{{ post_author.job_title }}
+      | <a href="{{ site.url }}/blog/index.html#{{ author_id }}">blog posts</a>
       {% if post_author.web %}
       | <a href="{{ post_author.web }}">web page</a>
       {% endif %}
