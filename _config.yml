@@ -18,7 +18,8 @@ author :
 #  feedburner : feedname
 
 # List of authors for people page
-author_ids: [jspjut, dhpark, vkanwar, estorm, smourad, fhannan]
+#author_ids: [jspjut, dhpark, vkanwar, estorm, smourad, fhannan]
+author_ids: [jspjut]
 # Author section for multiple author info
 post_authors :
   jspjut :
