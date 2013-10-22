@@ -1,3 +1,8 @@
+/* Reduce header margin */
+.page-header {
+  margin-top: 0px; }
+.navbar {
+  margin-bottom: 0px; }
 /* Custom container */
 .container-narrow {
   margin: 0 auto;

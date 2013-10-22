@@ -3,8 +3,8 @@
 </div>
 
 {% assign post_author = site.post_authors[page.author] %}
-<div class="row-fluid post-full">
-  <div class="span12">
+<div class="row post-full">
+  <div class="col-md-8">
     <div class="date">
       {% if post_author %}
         {% if post_author.web %}
@@ -18,8 +18,10 @@
     <div class="content">
       {{ content }}
     </div>
-
+  </div>
+  <div class="col-md-4">
   {% unless page.categories == empty %}
+  category:
     <ul class="tag_box inline">
       <li><i class="icon-folder-open"></i></li>
       {% assign categories_list = page.categories %}
@@ -28,28 +30,30 @@
   {% endunless %}  
 
   {% unless page.tags == empty %}
+    tags:
     <ul class="tag_box inline">
       <li><i class="icon-tags"></i></li>
       {% assign tags_list = page.tags %}
       {% include JB/tags_list %}
     </ul>
   {% endunless %}  
-
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
     <hr>
-    <div class="pagination">
-      <ul>
+    <div class="pagination btn-group">
       {% if page.previous %}
-        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
+        <a class="btn btn-default prev" href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a>
       {% else %}
-        <li class="prev disabled"><a>&larr; Previous</a></li>
+        <a class="btn btn-default disabled prev">&larr; Previous</a>
       {% endif %}
-        <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
+        <a class="btn btn-default" href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a>
       {% if page.next %}
-        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
+        <a class="btn btn-default next" href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a>
       {% else %}
-        <li class="next disabled"><a>Next &rarr;</a>
+        <a class="btn btn-default next disabled">Next &rarr;</a>
       {% endif %}
-      </ul>
     </div>
     <hr>
     {% include JB/comments %}
