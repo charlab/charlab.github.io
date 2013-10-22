@@ -33,6 +33,8 @@ post_authors :
     twitter : josefspjut
     github : jspjut
     linkedin : josefspjut
+# email, web, twitter, github, linkedin all optional
+# recommended student job_title as "B.S. Engineering 2015"
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 

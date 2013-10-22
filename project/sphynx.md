@@ -3,6 +3,7 @@ layout: page
 title: Sphynx
 header: SPMD Instruction Cache Research
 group: projects
+author_ids: [jspjut]
 ---
 {% include JB/setup %}
 
@@ -14,3 +15,8 @@ threads, the instruction cache can be reasonably shared.
 In this project, we examine the performance characteristics of a
 variety of such applications and vary the cache configuration to see
 which design is optimal.
+
+## People
+<div class="authors">
+  {% include custom/author_list %}
+</div>

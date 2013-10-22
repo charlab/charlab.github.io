@@ -1,0 +1,33 @@
+{% if page.author_ids %}
+  {% assign author_ids = page.author_ids %}
+{% else %}
+  {% assign author_ids = site.author_ids %}
+{% endif %}
+
+  {% for author_id in author_ids %}
+  {% assign post_author = site.post_authors[author_id] %}
+  <div id="{{ author_id }}" class="author">
+    {% if author_id != 'jspjut' %} <hr> {% endif %}
+    <!-- add image here
+         <a href="{{ post_author.web }}">
+	   <span width="150" height="150">Image!</span>
+         </a> -->
+    <h3>{{ post_author.display_name }}</h3>
+    <p class="muted">{{ post_author.job_title }}
+      {% if post_author.web %}
+      | <a href="{{ post_author.web }}">web page</a>
+      {% endif %}
+      {% if post_author.email %}
+      | <a href="mailto:{{ post_author.email }}">email</a>
+      {% endif %}
+      {% if post_author.twitter %}
+      | <a href="https://twitter.com/#!/{{ post_author.twitter }}">twitter</a>
+      {% endif %}
+      {% if post_author.linkedin %}
+      | <a href="http://linkedin.com/in/{{ post_author.linkedin }}">linkedin</a>
+      {% endif %}
+    </p>
+    <p>{{ post_author.bio }}</p>
+  </div>
+  {% endfor %}
+
