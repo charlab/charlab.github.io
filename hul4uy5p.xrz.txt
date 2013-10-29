@@ -1,0 +1,11 @@
+﻿Trying to post my first blog post
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   _config.yml
+#	new file:   _posts/estorm/2013-10-28-learning-to-blog
+#
+
