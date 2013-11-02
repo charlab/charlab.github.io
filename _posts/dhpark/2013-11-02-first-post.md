@@ -21,6 +21,7 @@ Next, get the **SSH clone URL** from Charlab's github site. It should be: `git@g
 git clone git@github.com:charlab/charlab.github.io.git
 ```
 This should have cloned the charlab files onto the directory you ran the code.
+Then pull the master branch from charlab with `git pull origin master:master`. This pulls the master branch from charlab.github.io.git and makes it master of your local repository. 
 
 
 If all the files were grabbed successfully, then go into the folder using `cd charlab.github.io/`. You can 
@@ -46,4 +47,7 @@ blog          History.markdown  pages.html  Rakefile
 Navigate into `_posts` folder with `cd _posts`, create your a folder with `mkdir <filename>`. Pick your favorite text editor and start blogging! I recommend `gedit` since it is very similar to your traditional text editor with all the GUI interface. I am trying to get used to using `gvim` right now since it has a GUI interface with the functionality of `vim`. 
 
 
-You use the exact same commands for adding and commiting files on git.
+Once you finish writing your blog post, add your changes with `git add _posts`, and commit using `git commit -m <some comments>`.
+Finally, push your code to charlab with `git push origin master:master`.
+
+
