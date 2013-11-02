@@ -19,6 +19,7 @@ Once you are on, you want to setup the git repository on your directory. First g
 Next, get the **SSH clone URL** from Charlab's github site. It should be: `git@github.com:charlab/charlab.github.io.git`. 
 
 Now clone the charlab repository by running:
+
 {% highlight text %}
 git clone git@github.com:charlab/charlab.github.io.git
 {% endhighlight %}
@@ -32,21 +33,25 @@ This pulls the master branch from charlab.github.io.git and makes it master of y
 
 If all the files were grabbed successfully, then go into the folder using `cd charlab.github.io/`. You can 
 look at the folders in the directory using `ls` command:
+
 {% highlight text %}
+
 [dhpark@tera blog]$ cd charlab.github.io/
+
 [dhpark@tera charlab.github.io]$ ls
 404.html      categories.html   images      people.html  README.md
 archive.html  changelog.md      _includes   _plugins     rss.xml
 assets        _config.yml       index.md    _posts       sitemap.txt
 atom.xml      _drafts           _layouts    project      tags.html
 blog          History.markdown  pages.html  Rakefile
+
 [dhpark@tera charlab.github.io]$ ls
 404.html      categories.html   images      people.html  README.md
 archive.html  changelog.md      _includes   _plugins     rss.xml
 assets        _config.yml       index.md    _posts       sitemap.txt
 atom.xml      _drafts           _layouts    project      tags.html
 blog          History.markdown  pages.html  Rakefile
-[dhpark@tera charlab.github.io]$
+
 {% endhighlight %}
 
 
