@@ -16,7 +16,7 @@ updates as they make progress.
 
 ## Recent Blog Posts
 
-  <ul class="posts">
+<ul class="posts">
   {% for post in site.posts limit:10 %}
     <li><span>{{ post.date | date_to_string }}</span> 
       <span>
