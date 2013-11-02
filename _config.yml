@@ -19,7 +19,7 @@ author :
 
 # List of authors for people page
 #author_ids: [jspjut, dhpark, vkanwar, estorm, smourad, fhannan]
-author_ids: [jspjut, estorm]
+author_ids: [jspjut, estorm, dhpark]
 # Author section for multiple author info
 post_authors :
   jspjut :
@@ -39,12 +39,12 @@ post_authors :
   dhpark :
     display_name : Dong-hyeon Park
     job_title : B.S. Engineering 2014
-    bio : 'Dong-hyeon has taken MicroPs'
-    email : 
+    bio : 'Dong-hyeon has taken MicroPs, Parallel Architecture and Embedded Systems.'
+    email : dhpark@g.hmc.edu
     web : 
     twitter : 
-    github : 
-    linkedin : 
+    github : dhpark-hmc
+    linkedin : dong-hyeon-park/25/465/a96
   vkanwar :
     display_name : Varun Kanwar
     job_title : B.S. Engineering 2014
