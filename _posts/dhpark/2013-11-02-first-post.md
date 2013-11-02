@@ -16,17 +16,23 @@ If you are not familar with *Tera* `tera.eng.hmc.edu`, it is the Engineering com
 
 Once you are on, you want to setup the git repository on your directory. First generate an SSH key for your tera account using the instructions [here](https://help.github.com/articles/generating-ssh-keys#platform-linux).
 
-Next, get the **SSH clone URL** from Charlab's github site. It should be: `git@github.com:charlab/charlab.github.io.git`. Now clone the charlab repository by running:
-```
+Next, get the **SSH clone URL** from Charlab's github site. It should be: `git@github.com:charlab/charlab.github.io.git`. 
+
+Now clone the charlab repository by running:
+{% highlight text %}
 git clone git@github.com:charlab/charlab.github.io.git
-```
+{% endhighlight %}
+
+
 This should have cloned the charlab files onto the directory you ran the code.
-Then pull the master branch from charlab with `git pull origin master:master`. This pulls the master branch from charlab.github.io.git and makes it master of your local repository. 
+Pull the master branch from charlab with `git pull origin master:master`. 
+
+This pulls the master branch from charlab.github.io.git and makes it master of your local repository. 
 
 
 If all the files were grabbed successfully, then go into the folder using `cd charlab.github.io/`. You can 
 look at the folders in the directory using `ls` command:
-```
+{% highlight text %}
 [dhpark@tera blog]$ cd charlab.github.io/
 [dhpark@tera charlab.github.io]$ ls
 404.html      categories.html   images      people.html  README.md
@@ -41,7 +47,7 @@ assets        _config.yml       index.md    _posts       sitemap.txt
 atom.xml      _drafts           _layouts    project      tags.html
 blog          History.markdown  pages.html  Rakefile
 [dhpark@tera charlab.github.io]$
-```
+{% endhighlight %}
 
 
 Navigate into `_posts` folder with `cd _posts`, create your a folder with `mkdir <filename>`. Pick your favorite text editor and start blogging! I recommend `gedit` since it is very similar to your traditional text editor with all the GUI interface. I am trying to get used to using `gvim` right now since it has a GUI interface with the functionality of `vim`. 
