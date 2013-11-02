@@ -3,10 +3,11 @@ layout: page
 title: "Blog"
 description: ""
 group: navigation
+blog_author_ids: [estorm, dhpark, jspjut]
 ---
 {% include JB/setup %}
 
-{% for author_ids in site.author_ids %}
+{% for author_ids in page.blog_author_ids %}
 {% assign author = site.post_authors[author_ids] %}
 <h3 id="{{ author_ids }}">{{ author.display_name }}</h3>
 
