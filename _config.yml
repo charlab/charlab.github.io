@@ -22,7 +22,7 @@ author :
 
 # List of authors for people page
 #author_ids: [jspjut, dhpark, vkanwar, estorm, smourad, fhannan]
-author_ids: [jspjut, estorm, dhpark]
+author_ids: [jspjut, estorm, dhpark, fhannan]
 # Author section for multiple author info
 post_authors :
   jspjut :
