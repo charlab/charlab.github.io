@@ -35,16 +35,16 @@ fhannan :
     display_name : Fabiha Hannan
     job_title : B.S. Engineering 2016
     bio : 'Fabiha is taking E85.'
-    email : fhannan@g.hmc.edu           <-- I added my email address
+    email : fhannan@g.hmc.edu           **(I added my email address)
     web : 
     twitter : 
-    github : fpjhannan                  <-- I added my Github username
+    github : fpjhannan                  **(I added my Github username)
     linkedin : 
 
 
 - Another edit to be made is in the index.html file in the 'blog' folder. I added my name in the following line:
 
-blog_author_ids: [estorm, dhpark, jspjut] --> blog_author_ids: [estorm, dhpark, fhannan, jspjut]
+blog_author_ids: [estorm, dhpark, fhannan, jspjut]
 
 
 
