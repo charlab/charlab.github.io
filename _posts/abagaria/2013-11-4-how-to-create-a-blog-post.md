@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "First blog post"
+title: "How to create a blog post"
 description: ""
 category: "tutorial"
 tags: [tutorial, blog, jekyll]
