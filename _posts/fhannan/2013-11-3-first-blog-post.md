@@ -25,9 +25,6 @@ charlab.github.io / _posts / fhannan / 2013-10-22-first-blog-post.md or cancel *
 
 
 Eric also mentioned adding your name to config.yml. Here is the line to be edited (add your name to the array):
-{% endhighlight %}
-
-{% highlight c++%}
 
 "author_ids: [jspjut, estorm, dhpark]" should be  "author_ids: [jspjut, estorm, dhpark, fhannan]" (I added my name to the list)
 
@@ -44,8 +41,13 @@ fhannan :
     github : fpjhannan                  <-- I added my Github username
     linkedin : 
 
-{% endhighlight %}
 
-{% highlight text %}
-Anyways, I didn't have any other issues or points that I felt needed to be clarified. Good luck to everyone else on making their blog posts!
+Another edit to be made is in the index.html file in the 'blog' folder. I added my name in the following line:
+
+blog_author_ids: [estorm, dhpark, jspjut] --> blog_author_ids: [estorm, dhpark, fhannan, jspjut]
+
+
+
+
+I think that's it for the issues I had or points that I felt needed to be clarified. Good luck to everyone else on making their blog posts!
 {% endhighlight %}
