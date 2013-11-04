@@ -6,7 +6,6 @@ category: "tutorial"
 tags: [tutorial, blog, jekyll]
 author: abagaria
 ---
-
 {% include JB/setup %}
-  
-  HIIIIIIII
+
+HIIIIIIIIIIIIIIIIIIIII
