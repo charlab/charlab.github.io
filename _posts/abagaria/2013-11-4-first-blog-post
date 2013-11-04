@@ -1,0 +1,22 @@
+---
+layout: post
+title: "First blog post"
+description: ""
+category: "tutorial"
+tags: [tutorial, blog, jekyll]
+author: abagaria
+---
+{% include JB/setup %}
+
+Hello, 
+
+I am a sophomore and an engineer. 
+
+I am really enjoying E-85. 
+
+I would love to work on projects which involve a combination of harware and software engineering.
+At this point, I would love to explore the different areas within computer engineering. I hope that this research 
+experience gives me the opportunity to learn about computer architecture, firware or even chip design. 
+
+Thank you, 
+Akhil.
