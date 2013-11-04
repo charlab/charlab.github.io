@@ -19,9 +19,9 @@ Although most tips seem to have been covered by Prof Spjut, Eric, and Donghyeon 
 
 - Github does not allow empty folders. You can create a new file in a folder or the repository and add the new folder name when naming the file (in the directory statement above the file editor), like so:
 
-charlab.github.io / _posts / ____ or cancel                                    *This is what you see initially.
-charlab.github.io / _posts / fhannan or cancel                                 *Add/name the new folder.
-charlab.github.io / _posts / fhannan / 2013-10-22-first-blog-post.md or cancel *You should see the folder added in blue and with a hyperlink. Name the file.
+charlab.github.io / _posts / ____                                    **(This is what you see initially.)
+charlab.github.io / _posts / fhannan                                 **(Add/name the new folder.)
+charlab.github.io / _posts / fhannan / 2013-11-3-first-blog-post.md  **(You should see the folder added in blue and with a hyperlink. Name the file.)
 
 
 - Eric also mentioned adding your name to config.yml. Here is the line to add your name to:
