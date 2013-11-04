@@ -92,6 +92,15 @@ post_authors :
     twitter : 
     github : abagaria
     linkedin : abagaria
+  pjolly :
+    display_name : Paul Jolly
+    job_title : B.S. Engineering 2016
+    bio : 'Paul is taking E85.'
+    email : pjolly@g.hmc.edu
+    web : 
+    twitter : 
+    github : paul-jolly
+    linkedin :
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
 # Most places will/should use BASE_PATH to make the urls
