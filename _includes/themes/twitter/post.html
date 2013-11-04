@@ -7,11 +7,7 @@
   <div class="col-md-8">
     <div class="date">
       {% if post_author %}
-        {% if post_author.web %}
-          By <a href="{{ site.url }}/people.html#{{ page.author }}">{{ post_author.display_name }}</a> on
-        {% else %}
-          By {{ post_author.display_name }} on
-        {% endif %}
+        By <a href="{{ site.url }}/people.html#{{ page.author }}">{{ post_author.display_name }}</a> on
       {% endif %}
       {{ page.date | date_to_long_string }}
     </div>
