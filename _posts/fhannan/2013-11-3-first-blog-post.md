@@ -11,7 +11,7 @@ author: fpjhannan
 {% highlight text %}
 Hi! I'm Fabiha. This is my first post in the repository charlab.github.io. 
 
-In terms of my research interests, I would like to focus on modeling digital architecture, through various mediums. I am also interested in working on parallel processors and GPUs. Although I would prefer using software to model hardware as opposed to more abstract programming, I am fine with high-level and low-level coding.
+In terms of my research interests, I would like to focus on modeling digital architecture, through various mediums. I am also interested in working on parallel processors and GPUs. Although I would prefer using software to model hardware as opposed to coding more abstract concepts, I am fine with high-level and low-level programming.
 
 Donghyeon explained using Github on Linux and the engineering server Tera. Like Eric, I downloaded the Github desktop application Windows and used both jekyll and Git Shell.
 
