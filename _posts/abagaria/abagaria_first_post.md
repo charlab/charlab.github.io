@@ -4,7 +4,7 @@ title: "First blog post"
 description: ""
 category: "tutorial"
 tags: [tutorial, blog, jekyll]
-author: pjolly
+author: abagaria
 ---
 
 {% include JB/setup %}
