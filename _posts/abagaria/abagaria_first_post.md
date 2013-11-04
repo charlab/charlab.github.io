@@ -1,1 +1,3 @@
-HIIIIIIII
+{% include JB/setup %}
+  
+  HIIIIIIII
