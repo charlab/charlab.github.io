@@ -24,9 +24,9 @@ charlab.github.io / _posts / fhannan or cancel                                 *
 charlab.github.io / _posts / fhannan / 2013-10-22-first-blog-post.md or cancel *You should see the folder added in blue and with a hyperlink. Name the file.
 
 
-- Eric also mentioned adding your name to config.yml. Here is the line to be edited (add your name to the array):
+- Eric also mentioned adding your name to config.yml. Here is the line to add your name to:
 
-"author_ids: [jspjut, estorm, dhpark]" should be  "author_ids: [jspjut, estorm, dhpark, fhannan]" (I added my name to the list)
+author_ids: [jspjut, estorm, dhpark, fhannan]
 
 ...
 (later in the code)
