@@ -3,7 +3,7 @@ layout: post
 title: "Setting up GPGPU-sim on Tera"
 description: ""
 category: "sphynx"
-tags: [tera, gpgpu-sim]
+tags: [Tera, gpgpu-sim, blog]
 author: dhpark
 ---
 {% include JB/setup %}
