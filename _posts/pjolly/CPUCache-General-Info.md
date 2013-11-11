@@ -16,7 +16,7 @@ need to access main memory which saves time.
 Three main types of caches:
 - Instruction Cache: easy access to instruction data
 - Data Cache: easy access to data
-- Translation Lookaside Buffer (TLB): *** Not entirely sure what this meant
+- Translation Lookaside Buffer (TLB): used to speed up virtual-physical memory translation for both the above caches
 
 If the cache is full, the processor decides which cache entry to replace based on "Replacement Policies." A common 
 replacement policy is least-recently used (LRU): data entry that is the least recently accessed is replaced.
@@ -36,11 +36,9 @@ Terms:
 
 Cache Entry Structure (One cache block):
 
----
-Tag:
-Data Block:
-Flag Bits:
----
+--------------------------------
+| Tag | Data Block | Flag Bits |
+--------------------------------
 
 Tag: part of the address location of data in main memory
 Data Block: Actual data fetched from main memory
