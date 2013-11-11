@@ -40,5 +40,7 @@ Cache Entry Structure (One cache block):
 |:-----:|:----------:|:---------:|
 
 Tag: part of the address location of data in main memory
+
 Data Block: Actual data fetched from main memory
+
 Flag Bits: one bit the indicates whether or not there is a valid entry in the cache block (whether cache block is used) 
