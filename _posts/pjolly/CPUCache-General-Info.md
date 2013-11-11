@@ -36,9 +36,8 @@ Terms:
 
 Cache Entry Structure (One cache block):
 
---------------------------------
-| Tag | Data Block | Flag Bits |
---------------------------------
+| Tag   | Data Block | Flag Bits |
+|:-----:|:----------:|:---------:|
 
 Tag: part of the address location of data in main memory
 Data Block: Actual data fetched from main memory
