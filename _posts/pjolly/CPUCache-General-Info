@@ -8,14 +8,18 @@ author: pjolly
 ---
 {% include JB/setup %}
 
-The CPU cache stores copies of data from frequently used memory locations. This allows the run time of the CPU to be much shorter since drawing/reading memory from the main memory locations requires more time. The cache memory is always a first step for the CPU when writing or reading data. If the data being written/read is already present in the cache, it does not need to access main memory which saves time.
+The CPU cache stores copies of data from frequently used memory locations. This allows the run time of the CPU to be much 
+shorter since drawing/reading memory from the main memory locations requires more time. The cache memory is always a first 
+step for the CPU when writing or reading data. If the data being written/read is already present in the cache, it does not 
+need to access main memory which saves time.
 
 Three main types of caches:
 - Instruction Cache: easy access to instruction data
 - Data Cache: easy access to data
 - Translation Lookaside Buffer (TLB): *** Not entirely sure what this meant
 
-If the cache is full, the processor decides which cache entry to replace based on "Replacement Policies." A common replacement policy is least-recently used (LRU): data entry that is the least recently accessed is replaced.
+If the cache is full, the processor decides which cache entry to replace based on "Replacement Policies." A common 
+replacement policy is least-recently used (LRU): data entry that is the least recently accessed is replaced.
 
 Terms:
 - Cache line: segments of fixed size in which data is transferred between memory and cache
