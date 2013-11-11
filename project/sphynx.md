@@ -3,7 +3,7 @@ layout: page
 title: Sphynx
 header: SPMD Instruction Cache Research
 group: projects
-author_ids: [jspjut, dhpark]
+author_ids: [jspjut, dhpark, estorm]
 ---
 {% include JB/setup %}
 
