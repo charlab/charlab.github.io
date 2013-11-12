@@ -16,7 +16,9 @@ Caches are frequently used by cache clients, such as a CPU (central processing u
 
 The CPU cache consists of small memories that are close to or on the CPU, in addition to the main memory, which is not nearly as fast. CPU caches now have three independent caches: instruction caches for faster instruction execution, data caches for faster data storage, and a translation lookaside buffer (TLB) for faster virtual-to-physical address translation of instructions and data. Pipeline CPUs access data from multiple caches for the different points in the pipeline. Cache row entires usually organized like so:
 
+```
 tag     	data block      	flag bits
+```
 
 The tag is the address of the data in the main memory and the data block is the actual data stored. The instruction cache requires only one flag bit per cache, a valid bit to indicate whether valid data has been stored.
 
@@ -26,6 +28,6 @@ I also read up on research on instruction caches. These topics included instruct
 
 Also, caches are not to be confused with buffers. Buffers are temporary memory locations that can serve as intermediates when CPU instructions cannot directly address data. Using this addressable memory:
 
-1) requires less transfers
-2) allows for an intermediate when direct transfers are not possible
-3) gives us a minimum data size for a transfer
+1. requires less transfers
+2. allows for an intermediate when direct transfers are not possible
+3. gives us a minimum data size for a transfer
