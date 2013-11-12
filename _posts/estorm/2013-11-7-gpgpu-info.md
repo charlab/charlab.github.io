@@ -2,7 +2,7 @@
 layout: post
 title: "GPGPU Basics"
 description: ""
-category: "sphnyx"
+category: "sphynx"
 tags: [gpgpu sphynx]
 author: estorm
 ---

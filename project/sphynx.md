@@ -3,10 +3,13 @@ layout: page
 title: Sphynx
 header: SPMD Instruction Cache Research
 group: projects
-author_ids: [jspjut, dhpark, estorm]
+author_ids: [jspjut, dhpark, estorm, abagaria, fhannan, pjolly]
 ---
 {% include JB/setup %}
 
+<div class="col-md-7">
+
+<p>
 The Sphynx project is an investigation of instruction cache design
 with respect to the growing number of parallel single program
 applications in the world.
@@ -15,8 +18,22 @@ threads, the instruction cache can be reasonably shared.
 In this project, we examine the performance characteristics of a
 variety of such applications and vary the cache configuration to see
 which design is optimal.
+</p>
 
-## People
+<h2>Recent Blog Posts</h2>
+{% for category in site.categories %}
+  {% if category[0] == "sphynx" %}
+    {% assign pages_list = category[1] %}
+    {% include JB/pages_list %}
+  {% endif %}
+{% endfor %}
+
+<ul class="tag_box inline"><li><a href="{{ site.url }}/categories.html#sphynx-ref">sphynx</a></li></ul>
+
+</div>
+
+<div class="col-md-5">
+<h2>People</h2>
 <div class="authors">
   {% include custom/author_list %}
 </div>
