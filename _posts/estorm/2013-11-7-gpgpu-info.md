@@ -3,7 +3,7 @@ layout: post
 title: "GPGPU Basics"
 description: ""
 category: "sphynx"
-tags: [gpgpu sphynx]
+tags: [gpgpu, sphynx]
 author: estorm
 ---
 {% include JB/setup %}

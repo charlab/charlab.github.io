@@ -2,8 +2,8 @@
 layout: post
 title: "GPU Terminology"
 description: ""
-category: "sphnyx"
-tags: [gpu sphynx]
+category: "sphynx"
+tags: [gpu, sphynx]
 author: estorm
 ---
 {% include JB/setup %}
