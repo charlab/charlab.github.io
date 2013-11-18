@@ -10,7 +10,7 @@ author: estorm
 
 This week, I tried to create a GPGPU configuration file for a more modern GPU. However, not long after I started, I came to realize that there were a lot of flags that were ambiguously named or the information could not be found on the internet. For example, it seems likely that the only way to find the latencies of particular instructions is by deducing the values by running a program on the actual GPU. One thing that I was surprised that I never found was the structure of a the GPU caches. It's easy to find the size of the caches, but I can't seem to find the number of blocks or lines. 
 
-I came across a lot of unfamiliar terms so I made a list of abbreviations and terminology that I came across.
+I came across a lot of unfamiliar terms so I made a list of abbreviations and terminology.
 
 ***
 
