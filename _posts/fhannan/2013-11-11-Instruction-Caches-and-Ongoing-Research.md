@@ -26,9 +26,9 @@ Caches can also be specialized. For example, trace caches store traces of instru
 
 I also read up on research on instruction caches. These topics included instruction cache performance on multithreaded architecture (to decrease conflicts between procedures), instruction cache performances in Online Transacton Processes (OLTP) database workloads (since the misses take up 40% of execution time), and other ways of improving execution time and performance.
 
-This paper about instruction cache performance on multithreaded architecture by Rakesh Kumar and Dean M Tullsen at University of California, San Diego in 2002 may prove useful in determining how the caches work:
+[This paper][kumar-tullsen-2002] about instruction cache performance on multithreaded architecture by Rakesh Kumar and Dean M Tullsen at University of California, San Diego in 2002 may prove useful in determining how the caches work:
 
-http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.8.4682&rep=rep1&type=pdf
+   [kumar-tullsen-2002]: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.8.4682&rep=rep1&type=pdf
 
 Also, caches are not to be confused with buffers. Buffers are temporary memory locations that can serve as intermediates when CPU instructions cannot directly address data. Using this addressable memory:
 
