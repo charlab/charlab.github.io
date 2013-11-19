@@ -8,6 +8,12 @@ author: fhannan
 ---
 {% include JB/setup %}
 
+UPDATE:
+
+I included a list of things to take away from the paper and a terminology section after our meeting today.
+
+__
+
 
 The paper is about compiling a program in memory in an “Instruction cache aware” way to minimize cache conflicts between procedures. The main issue is the conflicts between procedures on different threads (inter-thread account for an average of 21.21% of misses, usually due to the processor switching between threads often every cycle) than on the same thread (intra-thread accounts for an average of 20.47% of all misses, usually due to procedure calls). Inter-thread conflicts tend to not repeat with predictable patterns, making it more difficult to create optimization techniques. The program layout at the time of the paper made the problem worse. The paper also focuses on the direct-mapped caches that most frequently experience miss conflicts. 
 The researchers looked at three situations to find potential solutions:
@@ -47,3 +53,22 @@ Hashemi et al computed which procedures occupy which lines. Torrellas et al mapp
 Finally, Gloy and Smith used an algorithm called the Temporal Profile Conflict Modeling (TPCM). Information about procedure interleaving would go into a program trace. Kumar and Tullsen extend this to work for a multithreaded processor as it is based on temporal profile data and accurately models temporal the relevant cache mapping conflicts. TPCM can also be applied to code blocks of any granularity. 
 
 In the last two sections, Kumar and Tullsen explain their results. They show how their techniques can be applied to other caches (associative caches and caches with different sizes) as well as what improvements they made for the three scenarios. When co-scheduling is expected, the best complication technique resulted in 11% performance improvement and around 20% with a remapping algorithm. They did not feel as successful with only co-scheduling predicted (one thread was accessible) as less results were given. When each program is mapped independently at compile time, the technique (with no remapping) achieved 13% performance time improvement for two threads and 27% for four threads.
+
+__
+
+
+Brief Points to Take Away From The Paper:
+
+- We can make similar graphs and use similar models for the GPGPU-Sim, such as miss rates, performance improvement (the paper uses Weight Speedup but we don't want to use that; it doesn't give us new, useful info), and percentage of interthread and intrathread errors when running a specific benchmark or program.
+
+- The techniques used for and insight on the case both programs are known to be running at the same time (In our case, we know that we are scheduled one specific program at the compile time. Thus, we are working with the same case).
+
+- 
+
+(To be finished)
+
+__
+
+Terminology:
+
+(To be finished)
