@@ -11,7 +11,9 @@ author: dhpark
 <<<<<<< `WORK IN PROGRESS` >>>>>>
 
 Here are the instructions for setting up the GPGPU-sim to build successfully in Tera, with the `CUDA Toolkit`.
+
 **I'm still having trouble getting the `CUDA SDK` to work properly**
+
 For now, the only thing that is working is building the GPGPU-sim with the `make` command. 
 The `CUDA SDK` is required to run the example codes, but I am having trouble getting `CUDA SDK` up and running with the code.
 
@@ -34,15 +36,19 @@ The `CUDA SDK` is required to run the example codes, but I am having trouble get
 6. Add in these two lines to the file:
 
 {% highlight text %}
+
 export CUDA_INSTALL_PATH=/usr/local/cuda
 export PATH=$PATH:$CUDA_INSTALL_PATH/bin
+
 {% endhighlight %}
 
 7. Now we should be ready to build. Type the following commands on the terminal:
 
 {% highlight text %}
+
 [dhpark@tera v3.x]$ source setup_environment
 [dhpark@tera v3.x]$ make
+
 {% endhighlight %}
 
 8. Wait a couple minutes. Don't get intimidated by all the text and warnings that shows up. If something fails, try running `make` again. (It might succeed the second time!)
