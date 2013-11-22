@@ -8,7 +8,7 @@ author: dhpark
 ---
 {% include JB/setup %}
 
-<<<<<<< `WORK IN PROGRESS` >>>>>>
+`WORK IN PROGRESS`
 
 Here are the instructions for setting up the GPGPU-sim to build successfully in Tera, with the `CUDA Toolkit`.
 
