@@ -28,14 +28,14 @@ The `CUDA SDK` is required to run the example codes, but I am having trouble get
    `gedit ~/.bashrc`  
 6. Add in these two lines to the file: 
 
-{% highlight text %}  
+{% highlight %}  
 export CUDA_INSTALL_PATH=/usr/local/cuda  
 export PATH=$PATH:$CUDA_INSTALL_PATH/bin  
 {% endhighlight %}  
 
 7. Now we should be ready to build. Type the following commands on the terminal:  
 
-{% highlight text %}  
+{% highlight %}  
 [dhpark@tera v3.x]$ source setup_environment  
 [dhpark@tera v3.x]$ make  
 {% endhighlight %}  
