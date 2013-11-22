@@ -30,7 +30,7 @@ The `CUDA SDK` is required to run the example codes, but I am having trouble get
    `gedit ~/.bashrc`  
 6. Add in these two lines to the file: 
 
-{% highlight text %}
+{% highlight text %}  
 export CUDA_INSTALL_PATH=/usr/local/cuda  
 export PATH=$PATH:$CUDA_INSTALL_PATH/bin  
 {% endhighlight %}  
