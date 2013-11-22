@@ -23,15 +23,15 @@ The `CUDA SDK` is required to run the example codes, but I am having trouble get
 2. Pull the GPGPU-sim code from the charlab repository. See instructions from my previous posts.
 3. Go to `gpgpu-sim/v3.x` directory.
 
-`cd gpgpu-sim/v3.x`
+---`cd gpgpu-sim/v3.x`
 
 4. Look through `README` file. It should give you a general idea of what needs to be done.
 
-`gedit README`
+---`gedit README`
 
 5. Open `~/.bashrc` file with a text editor. I recommend `gedit` if you are not familar with linux. (~/ refers to your top-level home directory)
 
-`gedit ~/.bashrc`
+---`gedit ~/.bashrc`
 
 6. Add in these two lines to the file:
 
