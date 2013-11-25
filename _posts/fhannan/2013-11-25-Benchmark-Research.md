@@ -48,3 +48,6 @@ __
 [Here][link] is the RODINIA Benchmark Suite, courtesy of the Department of Computer Science at the University of Virginia.
 
 [link]: https://www.cs.virginia.edu/~skadron/wiki/rodinia/index.php/Main_Page
+
+
+Other benchmarks used include: AES Cryptography, Graph Algorithm: Breadth First Search, Coulombic Potential, gpuDG, 3D Laplace Solver, LIBOR Monte Carlo, MUMmerGPU, Neural Network Digit Recognition, N-Queens Solver, Ray Tracing, StoreGPU, Weather Prediction, Black-Scholes BLK option pricing, and Fast Walsh Transform.
