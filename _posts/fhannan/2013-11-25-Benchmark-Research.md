@@ -46,3 +46,5 @@ __
 - It also has useful graphs for when the RODINIA Benchmark Suite. Accuracy was measured through functional, computing time, and power models; these are what the GPGPU-Sim is supposed to simulate.
 
 [Here][link] is the RODINIA Benchmark Suite, courtesy of the Department of Computer Science at the University of Virginia.
+
+[link]: https://www.cs.virginia.edu/~skadron/wiki/rodinia/index.php/Main_Page
