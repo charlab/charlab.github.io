@@ -45,9 +45,40 @@ __
 
 - It also has useful graphs for when the RODINIA Benchmark Suite. Accuracy was measured through functional, computing time, and power models; these are what the GPGPU-Sim is supposed to simulate.
 
-[Here][link] is the RODINIA Benchmark Suite, courtesy of the Department of Computer Science at the University of Virginia.
+[Here][link] is the RODINIA Benchmark Suite, courtesy of the Department of Computer Science at the University of Virginia. It has descriptions on the site.
 
 [link]: https://www.cs.virginia.edu/~skadron/wiki/rodinia/index.php/Main_Page
 
+In [this paper][paper], "Analyzing CUDA Workloads Using a Detailed GPU Simulator" by Ali Bakhoda, George L. Yuan, Wilson W. L. Fung, Henry Wong and Tor M. Aamodt at the University of British Columbia, they use the following benchmarks:
 
-Other benchmarks used include: AES Cryptography, Graph Algorithm: Breadth First Search, Coulombic Potential, gpuDG, 3D Laplace Solver, LIBOR Monte Carlo, MUMmerGPU, Neural Network Digit Recognition, N-Queens Solver, Ray Tracing, StoreGPU, Weather Prediction, Black-Scholes BLK option pricing, and Fast Walsh Transform.
+[paper]: http://www.ece.ubc.ca/~aamodt/papers/gpgpusim.ispass09.pdf
+
+-AES Cryptography/Encryption: uses the Advanced Encryption Standard algorithm in CUDA to encrypt and decrypt files.
+
+-Graph Algorithm: Breadth First Search: breadth first search on a graph
+
+-Coulombic Potential: unroll loops to reduce loop overheads and store point charge data in constant memory with caching
+
+-gpuDG: calculate 3D radar scattering and analyze waves and particle accelerators in electromagnetics
+
+-3D Laplace Solver: parallel finance application; uses shared memory and coalesced global memory accesses
+
+-LIBOR Monte Carlo: Monte Carlo simulations based on the London Interbank Offered Rate Market Model
+
+-MUMmerGPU: matches query strings of standard DNA nucleotides to a reference string to simulate genetic processes
+
+-Neural Network Digit Recognition: recognize handwritten digits withthe network and pre-determined neuron weights and input digits in global memory
+
+-N-Queens Solver: solves a chess board puzzle by placing N queens so that they cannot catch each other
+
+-Ray Tracing: rendering graphics with near photo-realism using scalar threads in CUDA for each pixel
+
+-StoreGPU: accelerates hashing-based primited for middleware
+
+-Weather Prediction: uses the GPU to accelerate a portion of the Weather Research and Forecast Model
+
+-Black-Scholes BLK option pricing: not explained
+
+-Fast Walsh Transform: not explained
+
+
