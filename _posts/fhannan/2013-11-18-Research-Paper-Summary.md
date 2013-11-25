@@ -10,7 +10,7 @@ author: fhannan
 
 UPDATE:
 
-I included a list of things to take away from the paper and a terminology section after our meeting today.
+I included a list of things to take away from the paper after our meeting today.
 
 __
 
@@ -62,13 +62,3 @@ Brief Points to Take Away From The Paper:
 - We can make similar graphs and use similar models for the GPGPU-Sim, such as miss rates, performance improvement (the paper uses Weight Speedup but we don't want to use that; it doesn't give us new, useful info), and percentage of interthread and intrathread errors when running a specific benchmark or program.
 
 - The techniques used for and insight on the case both programs are known to be running at the same time (In our case, we know that we are scheduled one specific program at the compile time. Thus, we are working with the same case).
-
-- 
-
-(To be finished)
-
-__
-
-Terminology:
-
-(To be finished)
