@@ -1,4 +1,13 @@
-Blog: 
+---
+layout: post
+title: "first_run_gpgpu"
+description: ""
+category: "sphynx"
+tags: [gpgpu, sphynx]
+author: abagaria
+---
+{% include JB/setup %}
+
 
 1. I followed the instructions from DH's blogs to setup git on my tera account. After that I cloned the GP-GPU sim files from the git repo into my tera account. 
 
