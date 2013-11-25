@@ -69,3 +69,10 @@ make: *** [default] Error 2
 11. This nvopencc command should be (maybe?) in the SDK and toolkit files already. So I am not sure why it cannot find this command. 
 
 12. We are so close to running our first program on GP-GPU Sim!
+
+
+P.S: Here is the link which helped me understand the issue with the missing files while getting the SDK to compile: 
+http://stackoverflow.com/questions/16024978/usr-bin-ld-cannot-find-lc-while-compiling-with-makefile
+
+And here is the Stack thread that we were following when we were (unsuccessfully) trying to run the example code on NVIDIA:
+http://stackoverflow.com/questions/12268373/compiling-basic-c-language-cuda-code-in-linux-ubuntu
