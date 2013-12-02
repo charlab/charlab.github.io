@@ -13,18 +13,19 @@ After a long-long series of guessing, googling, text scrambling and copy&pastes,
 Out of 12 total benchmarks that came with GPGPU-sim, the ones scratched out are the ones that failed to compile, and the one in **bold** is the one that successfully compiled. 
 
 **GPGPU-SIM Example Benchmarks**  
-  * ~~AES~~ 
-  * BFS
-  * **CP**
-  * ~~DG~~
-  * LIB
-  * LPS
-  * ~~MUM~~
-  * NN
-  * NQU
-  * ~~RAY~~
-  * STO
-  * ~~WP~~  
+
+ * ~~AES~~   
+ * BFS  
+ * **CP**   
+ * ~~DG~~  
+ * LIB  
+ * LPS  
+ * ~~MUM~~  
+ * NN  
+ * NQU  
+ * ~~RAY~~  
+ * STO  
+ * ~~WP~~   
 
 
 We ran the `CP` benchmark successfully with a simulation of GTX480. We didn't try the other GPUs that came with GPGPU-sim, but it should work in the similar manner. 
