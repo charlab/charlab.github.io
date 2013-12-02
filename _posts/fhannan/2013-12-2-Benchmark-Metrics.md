@@ -8,6 +8,8 @@ author: fhannan
 ---
 {% include JB/setup %}
 
+(edit: I always forget the .md at the end of my post titles :-( )
+
 This week's goal was to work with Eric and Paul to organize metrics to characterize the benchmarks we will use.
 
 These are clarifications we established during the meeting and after emailing Professor Spjut:
