@@ -3,18 +3,38 @@ layout: page
 title: Spock
 header: Cache Reuse Research
 group: projects
-author_ids: [jspjut]
+author_ids: [jspjut, estorm]
 ---
 {% include JB/setup %}
 
+<div class="col-md-7">
+
+<p>
 The Spock sets out to create a qualitative cache performance metric to
 assist application and cache designers in optimizing their designs for
 each other.
+</p>
 
-This work is currently under submission. More details will be listed
-here once published.
+<p>
+This work is currently under preparation for submission. More details
+will be listed here once published.
+</p>
 
-## People
+<h2>Recent Blog Posts</h2>
+{% for category in site.categories %}
+  {% if category[0] == "spock" %}
+    {% assign pages_list = category[1] %}
+    {% include JB/pages_list %}
+  {% endif %}
+{% endfor %}
+
+<ul class="tag_box inline"><li><a href="{{ site.url }}/categories.html#spock-ref">spock</a></li></ul>
+
+</div>
+
+<div class="col-md-5">
+<h2>People</h2>
 <div class="authors">
   {% include custom/author_list %}
+</div>
 </div>
