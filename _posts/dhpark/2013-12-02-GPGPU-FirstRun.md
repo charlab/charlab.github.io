@@ -12,8 +12,7 @@ After a long-long series of guessing, googling, text scrambling and copy&pastes,
 
 Out of 12 total benchmarks that came with GPGPU-sim, the ones scratched out are the ones that failed to compile, and the one in **bold** is the one that successfully compiled. 
 
-{% highlight text %}  
-
+**GPGPU-SIM Example Benchmarks**  
   * ~~AES~~ 
   * BFS
   * **CP**
@@ -27,13 +26,10 @@ Out of 12 total benchmarks that came with GPGPU-sim, the ones scratched out are 
   * STO
   * ~~WP~~  
 
-{% endhighlight %}
 
 We ran the `CP` benchmark successfully with a simulation of GTX480. We didn't try the other GPUs that came with GPGPU-sim, but it should work in the similar manner. 
 
 Here is a description of the `CP` benchmark from the paper on [GPGPU-sim](http://www.ece.ubc.ca/~aamodt/papers/gpgpusim.ispass09.pdf)
-
-{% highlight text %}  
 
 **Coulombic Potential (CP)**  
 CP is part of the Parboil
@@ -45,7 +41,6 @@ advantage of caching. CP has been heavily optimized (it
 has been shown to achieve a 647× speedup versus a CPU
 version)  
 
-{% endhighlight %}
 
 You can see the output files from running the benchmark in the Github directory under `charlab.github.io/_posts/dhpark/`.  
 There is `GTX480out.txt`, which is the output file from running `CP` with GTX480. If you look towards the end, there are lot of useful informations like cache misses and runtime.  
