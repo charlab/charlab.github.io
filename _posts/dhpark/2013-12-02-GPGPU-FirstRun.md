@@ -26,7 +26,7 @@ Out of 12 total benchmarks that came with GPGPU-sim, the ones scratched out are 
 * ~~RAY~~
 * STO
 * ~~WP~~  
-* 
+
 {% endhighlight %}
 
 We ran the `CP` benchmark successfully with a simulation of GTX480. We didn't try the other GPUs that came with GPGPU-sim, but it should work in the similar manner. 
