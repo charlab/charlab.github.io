@@ -10,22 +10,22 @@ author: dhpark
 
 After a long-long series of guessing, googling, text scrambling and copy&pastes, Akhil and I finally managed to get *some* of the example benchmarks in GPGPU-sim to build, and **ONE** benchmark to run successfully without giving us any segfaults. I'll add a blog post on how to add CUDA SDK into your directory later in the week. (probably by putting it on a GIT repository) There were a ton of semi-random, non-intuitive hacks we had to do to get the example code compiling, but hopefully we will be able to get it to work on everyone's directory.  
 
-Out of 12 total benchmarks that came with GPGPU-sim, the ones scratched out are the ones that failed to compile, and the one in *bold* is the one that successfully compiled. 
+Out of 12 total benchmarks that came with GPGPU-sim, the ones scratched out are the ones that failed to compile, and the one in **bold** is the one that successfully compiled. 
 
 {% highlight text %}  
 
-* ~~AES~~ 
-* BFS
-* **CP**
-* ~~DG~~
-* LIB
-* LPS
-* ~~MUM~~
-* NN
-* NQU
-* ~~RAY~~
-* STO
-* ~~WP~~  
+  * ~~AES~~ 
+  * BFS
+  * **CP**
+  * ~~DG~~
+  * LIB
+  * LPS
+  * ~~MUM~~
+  * NN
+  * NQU
+  * ~~RAY~~
+  * STO
+  * ~~WP~~  
 
 {% endhighlight %}
 
