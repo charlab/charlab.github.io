@@ -33,6 +33,8 @@ Branch misprediction – ignoring branch predictors for now; they could mess up 
 
 This narrows it down to two metrics: stalls due to the instruction cache and instruction duplication. We also considered instruction throughput, but were not sure which data to look at for this. We decided to leave it alone for this week, since it is essentially an inverse view of stalls due to the instruction cache.
 
+__
+
 To measure stalls due to the instruction cache, we summed up the number of misses and the miss rates for the L1 and L2 instruction caches. This assumes that there is a stall for every miss. As of now, we are not sure if this is a correct assumption to make.
 
 For the L1 instruction cache, we have 1599 misses out of 2072127 accesses, or a 0.008 miss rate. For the L2 instruction cache, we have 2079 misses out of 9014 accesses, or a 0.2306 miss rate.
@@ -46,12 +48,19 @@ __
 
 
 Finally, we have a couple questions:
--How would we measure instruction throughput? We only get latencies outputted, so which one would we use? (Or maybe we're not measuring isntruction throughput at all, since stalls due to instruction cache is sufficient.)
--Are the assumptions we made (that every miss indicates a stall [and no forwards or nonstalls] and that the total misses are at least proportional to the total number of duplicate instruction calls) valid?
+
+- How would we measure instruction throughput? We only get latencies outputted, so which one would we use? (Or maybe we're not measuring isntruction throughput at all, since stalls due to instruction cache is sufficient.)
+
+- Are the assumptions we made (that every miss indicates a stall [and no forwards or nonstalls] and that the total misses are at least proportional to the total number of duplicate instruction calls) valid?
+
 - We came across the following in the benchmark simulation printout and were going to analyze it, but we realized we do not know what it means. What does it mean?
 
 "Number of Memory Banks Accessed per Memory Operation per Warp (from 0):
+
 0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        
+
 Average # of Memory Banks Accessed per Memory Operation per Warp=nan
 
-position of mrq chosen"
+position of mrq chosen
+
+0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0 "
