@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Looking at alternative: Multi2Sim"
+title: "Exploring Alternatives: Multi2Sim"
 description: ""
 category: "sphynx"
 tags: [Tera, blog]
