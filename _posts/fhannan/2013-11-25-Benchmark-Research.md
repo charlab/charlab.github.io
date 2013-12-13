@@ -82,9 +82,7 @@ In [this paper][paper], "Analyzing CUDA Workloads Using a Detailed GPU Simulator
 -Fast Walsh Transform: not explained
 
 
-Here are other benchmarks I found:
+Here is another benchmark I found:
 
 - [Benchmarks used in a 2009 ISPASS paper without explanations of the benchmarks][a]
   [a]: https://dev.ece.ubc.ca/projects/gpgpu-sim/changeset/ba7eeab1ef435177fdfdd264803e18c2208bb57a/ispass2009-benchmarks/benchmarks/README.ISPASS-2009
-
-- [a]
