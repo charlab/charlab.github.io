@@ -8,7 +8,7 @@ pygments: true
 # trying better markdown
 markdown: redcarpet
 redcarpet:
-  extensions: ["tables","fenced_code_blocks"]
+  extensions: ["tables", "fenced_code_blocks"]
   
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
