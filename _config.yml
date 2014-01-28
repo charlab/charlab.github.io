@@ -70,12 +70,12 @@ post_authors :
   abagaria :
     display_name : Akhil Bagaria
     job_title : B.S. Engineering 2016
-    bio : 'Akhil is taking E85.'
+    bio : 'Akhil has taken E85.'
     email : abagaria@hmc.edu
-    web : 
+    web : abagaria.wordpress.com
     twitter : 
     github : abagaria
-    linkedin : abagaria
+    linkedin : akhilbagaria
   pjolly :
     display_name : Paul Jolly
     job_title : B.S. Engineering 2016
