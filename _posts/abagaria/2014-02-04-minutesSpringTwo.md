@@ -1,3 +1,12 @@
+---
+layout: post
+title: "minutesSpringTwo"
+description: ""
+category: "sphynx"
+tags: [minutes, sphynx]
+author: abagaria
+---
+{% include JB/setup %}
 
 1. Eric spoke about his research in proposing a new data caching scheme. 
 
