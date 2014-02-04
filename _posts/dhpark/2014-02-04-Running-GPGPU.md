@@ -14,6 +14,7 @@ Before we begin, here is the summary of current gpgpu-sim setup on Charlab machi
 
 Now here the steps you need to follow for running the benchmarks:  
 * Open `~/.bashrc` with a text editor. (`gedit`, `nano`, etc). Add these lines into the file and save it.
+
 ```  
 export NVIDIA_COMPUTE_SDK_LOCATION=/data/charlab/NVIDIA_GPU_Computing_SDK  
 
