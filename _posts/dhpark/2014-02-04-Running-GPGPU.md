@@ -41,7 +41,7 @@ For example, to run CP, go `cd CP/`
 
 * Run the benchmark with `sh README.GPGPU-Sim` command. To save the output onto a text file, I recommend using `sh README.GPGPU-Sim > CP_GTX480_out.txt &`. 
 
-* Once you are done running all the benchmarks, youo wanted to test, go to the top-level directory `../ispass2009-benchmarks/` make sure you cleanup the setting by running `./setup_config.sh --cleanup` .
+* Once you are done running all the benchmarks, youo wanted to test, go to the top-level directory `cd ../ispass2009-benchmarks/` make sure you cleanup the setting by running `./setup_config.sh --cleanup` .
 
 
 
