@@ -18,6 +18,7 @@ The output file of the benchmark will be saved in `/data/charlab/gpgpu-sim/RESUL
 | Quadro FX5600 default  |  X    |   X   |       |       |       |       |       |       |
 | Quadro FX5800 default  |       |       |       |       |       |       |       |       |
 | Tesla C2050 default    |       |       |       |       |       |       |       |       |
+| _______________________|_______|_______|_______|_______|_______|_______|_______|_______|
 | GTX480 Unified Cache   |       |       |       |       |       |       |       |       |
  
 
