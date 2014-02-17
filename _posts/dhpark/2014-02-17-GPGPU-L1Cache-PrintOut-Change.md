@@ -83,7 +83,7 @@ Here are the steps I took to tweak the output format of instruction cache statis
 
 At line 1985, we have the `shader_print_cache_stats` function in `gpgpu-sim` class that gets called during the final output phase of GPGPU-Sim. This function goes through each L1 cache type (I,D,C,T) and prints the stats for each. The instruction cache portion of this function was modified to:
 
-{% highlight c++ %}
+```cpp
 
 fprintf( stdout, "PRINT FORMAT:L1I_cache_core[ Cluster_Index][ Core_index ]: Access, Miss, Miss_rate, Pending_hits, Reservation_fails \n\n");  
 	for ( unsigned i = 0; i < m_shader_config->n_simt_clusters; ++i ) {  
@@ -97,7 +97,7 @@ fprintf( stdout, "PRINT FORMAT:L1I_cache_core[ Cluster_Index][ Core_index ]: Acc
             total_css += cluster_css;  
         }  
         
-{% endhighlight %}
+```
 
 The code essentially goes through each core of each cluster to gather and print the cache necessary statistics.
 
@@ -105,10 +105,10 @@ The code essentially goes through each core of each cluster to gather and print 
 
 One slight problem in looping through each core was that the pointer to the `shader core` array in each cluster was a private variable that couldn't be accssed by the `gpgpu-sim` class. The simplest solution to this problem (though not really the safest) was to add a `get_core()` function.
 
-(% highlight c++ %}
+```cpp
 
     shader_core_ctx **get_core() { return m_core; }
-    
-{% endhighlight %}
+ 
+```
 
 
