@@ -16,13 +16,14 @@ The output file of the benchmark will be saved in `/data/charlab/gpgpu-sim/RESUL
 | Machine                |  BFS  |   CP  |  LIB  |  LPS  |   NN  |  NQU  |  RAY  |  STO  |
 | ---------------------- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | GTX 480 default        |  X    |   X   |   X   |   X   |   X   |   X   |   X   |   X   |
-| Quadro FX5600 default  |  X    |   X   |       |   X   | Error |   X   |       |       |
+| Quadro FX5600 default  |  X    |   X   |       |   X   | Error |   X   |   X   |   X   |
 | Quadro FX5800 default  |       |       |       |       |       |       |       |       |
 | Tesla C2050 default    |       |       |       |       |       |       |       |       |
 | _______________________|_______|_______|_______|_______|_______|_______|_______|_______|
 | GTX480 Unified Cache   |       |       |       |       |       |       |       |       |
  
-
+ 
+Runtime observations: `LIB` seems to take an extremely long time to finish. On the other hand, `CP` is very short.
 
 
 
