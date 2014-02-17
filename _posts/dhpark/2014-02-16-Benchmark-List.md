@@ -13,7 +13,7 @@ This blog post will keep a table of all the benchmarks & machine configurations 
 The output file of the benchmark will be saved in `/data/charlab/gpgpu-sim/RESULTS/` directory.
 
 
-| Machine                |->BFS<-|-> CP<-|->LIB<-|->LPS<-|-> NN<-|->NQU<-|->RAY<-|->STO<-|
+| Machine                |  BFS  |   CP  |  LIB  |  LPS  |   NN  |  NQU  |  RAY  |  STO  |
 | ---------------------- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | GTX 480 default        |  X    |   X   |   X   |   X   |   X   |   X   |   X   |   X   |
 | Quadro FX5600 default  |  X    |   X   |       |   X   | Error |   X   |   X   |   X   |
