@@ -89,6 +89,7 @@ if __name__ == '__main__':
 After running this code with the benchmarks we have, we got the following list of instructions per benchmark:
 
 
+
 Name of Benchmark Program | Number of Instructions
 
 
@@ -111,6 +112,7 @@ NN - NA
 NQU - NA
 
 RAY - 2129
+
 
 
 Note that NA means "not available." After looking at the code and number of lines for BFS and RAY, the number of instructions found for each, 255 and 2129 respectively, looks reasonable and close to the expected value.
