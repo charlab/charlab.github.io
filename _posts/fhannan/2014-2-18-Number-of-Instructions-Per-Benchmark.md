@@ -15,21 +15,5 @@ To do this, Akhil and I worked on analyzing and tweaking the benchmark programs,
                                                                      
 First, we looked at the code for each program and what we wanted to use to parse it out. You can see this in the parser code included at the end of the post. Then, we added 
 
-```cpp
- 
-```
 
-
-After running this code with the benchmarks we have, we got the following list of instructions per benchmark:
-
-require 'redcarpet'
-markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, :tables => true)
-
-text = <<END
-| Benchmark | Number of Instructions |
-| -------- | -------- |
-| BFS    | 256   |
-| cell 3   | cell 4   |
-END
-
-puts markdown.render(text)
+[still being edited]
