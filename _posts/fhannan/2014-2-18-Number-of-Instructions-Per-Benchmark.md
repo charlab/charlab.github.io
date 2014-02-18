@@ -3,7 +3,7 @@ layout: post
 title: "2014-2-18-Number-of-Instructions-Per-Benchmark"
 description: ""
 category: "sphynx"
-tags: [blog, jekyll]
+tags: [blog]
 author: fhannan
 ---
 {% include JB/setup %}
