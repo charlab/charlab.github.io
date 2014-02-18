@@ -91,15 +91,25 @@ After running this code with the benchmarks we have, we got the following list o
 
 Name of Benchmark Program | Number of Instructions
 
+
 AES - NA
+
 BFS - 255
+
 CP - NA
+
 DG - NA
+
 LIB - NA
+
 LPS - NA
+
 MUM - NA
+
 NN - NA
+
 NQU - NA
+
 RAY - 2129
 
 
