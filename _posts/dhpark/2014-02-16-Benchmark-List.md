@@ -20,21 +20,21 @@ The output file of the benchmark will be saved in `/data/charlab/gpgpu-sim/RESUL
 
 | Machine                       |  BFS  |   CP  |  LIB  |  LPS  |   NN  |  NQU  |  RAY  |  STO  |
 | ----------------------------- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| GTX 480 default <4:64:4>      |  X    |   X   |   X   |   X   |   X   |   X   |   X   |   X   |
+| GTX 480 default [4:64:4]      |  X    |   X   |   X   |   X   |   X   |   X   |   X   |   X   |
 | Quadro FX5600 default         |  X    |   X   |   X   |   X   | Error |   X   |   X   |   X   |
 | Quadro FX5800 default         |       |       |       |       |       |       |       |       |
 | Tesla C2050 default           |       |       |       |       |       |       |       |       |
 | _____________________________ |_______|_______|_______|_______|_______|_______|_______|_______|
 | GTX480 Unified Cluster        |       |   X   |       |       |       |       |       |       |
-| GTX480 Unified Core <4:64:4>  |   X   |   X   |   X   |   X   | Error |   X   |   X   |   X   |
-| GTX480 Unified Core <60:64:4> |       |       |       |       |       |       |       |       |
+| GTX480 Unified Core [4:64:4]  |   X   |   X   |   X   |   X   | Error |   X   |   X   |   X   |
+| GTX480 Unified Core [60:64:4] |       |       |       |       |       |       |       |       |
 |                               |       |       |       |       |       |       |       |       |
 |                               |       |       |       |       |       |       |       |       |
 |                               |       |       |       |       |       |       |       |       |
 
 --
 
-The `<#:#:#>` following each GPU is the per-core L1 Instruction cache configuration. The tag goes as: `< NumSet : BlockSize : Associativity > `
+The `[#:#:#]` following each GPU is the per-core L1 Instruction cache configuration. The tag goes as: `[ NumSet : BlockSize : Associativity ] `
  
  
 __Notes__
