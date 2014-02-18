@@ -17,9 +17,8 @@ First, we looked at the code for each program and what we wanted to use to parse
 
 ```cpp
  
-...
+```
 
-```cpp
 
 After running this code with the benchmarks we have, we got the following list of instructions per benchmark:
 
