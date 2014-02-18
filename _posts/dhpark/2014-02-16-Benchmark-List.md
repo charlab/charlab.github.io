@@ -41,7 +41,7 @@ __Notes__
 *  `GTX 480 default` and `Quadro FX5600 default` were not run with the modified L1 cache print.  
 *  `GTX480 Unified Cluster` is GTX480 with all the cores moved to a single cluster.  
 *  `GTX480 Unified Core` is single-core configuration of GTX480. Its cache size was not changed reflect the increased execution width.  
-*  
+
  
 
 Runtime observations: `LIB` seems to take an extremely long time to finish (~1hour or more). On the other hand, `NQU` is very short (~6 second simulation time). 
