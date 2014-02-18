@@ -8,7 +8,7 @@ author: dhpark
 ---
 {% include JB/setup %}
 
-Last Update: 2/17/2014 7:30PM
+Last Update: 2/17/2014 10:00PM
 
 
 This blog post will keep a table of all the benchmarks & machine configurations that have been simulated and saved on Charlab machine. Update this table once the benchmark is run & the appropriate output files are moved into the results directory.
@@ -27,7 +27,7 @@ The output file of the benchmark will be saved in `/data/charlab/gpgpu-sim/RESUL
 | _____________________________ |_______|_______|_______|_______|_______|_______|_______|_______|
 | GTX480 Unified Cluster        |       |   X   |       |       |       |       |       |       |
 | GTX480 Unified Core [4:64:4]  |   X   |   X   |   X   |   X   | Error |   X   |   X   |   X   |
-| GTX480 Unified Core [60:64:4] |       |       |       |       |       |       |       |       |
+| GTX480 Unified Core [60:64:4] |   X   |   X   |   X   |   X   | Error |   X   |   X   |   X   |
 |                               |       |       |       |       |       |       |       |       |
 |                               |       |       |       |       |       |       |       |       |
 |                               |       |       |       |       |       |       |       |       |
