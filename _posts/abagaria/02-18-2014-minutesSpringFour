@@ -1,0 +1,37 @@
+---
+layout: post
+title: "minutesSpringFour"
+description: ""
+category: "sphynx"
+tags: [minutes, sphynx]
+author: abagaria
+---
+{% include JB/setup %}
+
+1. We want to count the number of PTX instructions and not the # of sass instructions. This is because GPGPU sim is
+   running PTX instructions. 
+   
+2. The instruction cache seems much larger than the size of the instructions in the seen benchmarks. Thus changing the 
+   cache will not change the cache stats as the entire program is resident in the cache. 
+   
+3. We need to be able to make our own config. The current config is for GTX 480 which is outdated. We should probs 
+   write a config file for the 680, 780s.
+
+4. Fahiba and Akhil said that they can get the #instructions for all the benchmarks by Friday.
+
+5. Samy said that given nothing changed from yesterday, he should be able to run programs on his machine. 
+
+6. DH said that he separated the cache stats for the different 
+
+7. NVIDIA's Cuda Core is an ALU/pipeline. GPGPUs core is a SIMD/SIMT core which has multiple cores in it. CUDA core is 
+   also similar to an ALU. 
+   
+8. We could create a seperate top-level directory for all the scripts. We could also do version control using GIT.
+
+NEXT WEEK
+----------
+
+1. Akhil: #Instructions per benchmark
+2. Fabiha: Parser
+3. Samy: Understand what the benchmarks do. Where it comes from, why its interesting. 
+4. DH: Look up GTX 680, 780 and config files for the same.
