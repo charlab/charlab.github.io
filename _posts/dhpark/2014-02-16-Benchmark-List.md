@@ -37,7 +37,8 @@ The output file of the benchmark will be saved in `/data/charlab/gpgpu-sim/RESUL
 The `[#:#:#]` following each GPU is the per-core L1 Instruction cache configuration. The tag goes as: `[ NumSet : BlockSize : Associativity ] `
  
  
-__Notes__
+__Notes__  
+
 *  `GTX 480 default` and `Quadro FX5600 default` were not run with the modified L1 cache print.  
 *  `GTX480 Unified Cluster` is GTX480 with all the cores moved to a single cluster.  
 *  `GTX480 Unified Core` is single-core configuration of GTX480. Its cache size was not changed reflect the increased execution width.  
