@@ -17,7 +17,7 @@ First, we looked at the code for each program and what we wanted to use to parse
 
 ```cpp
 start_str = '\t//start_file\n' 
-    end_str = '\t//end_file\n'
+end_str = '\t//end_file\n'
 ```
 
 The criteria for a line to be an instruction was that it was not a comment (no '//' in it) or a blank line (such as '\n'). Then we checked to see whether it was an instruction based on whether there was a semicolon in the line or it had any of the following: .loc, .file,  .param, and .entry . These were the only instructions that did not end with a semicolon.
