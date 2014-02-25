@@ -28,6 +28,19 @@ After running this code with the benchmarks we have, we got the following list o
 
 Name of Benchmark Program | Number of Instructions
 
+| Benchmark                     | Number of PTX Instructions         |
+| ----------------------------- | :---: |
+| RAY                           | 2129  |
+| BFS                           | 255   |   
+| CP                            | 117   |   
+| LIB                           | 1396  |   
+| LPS                           | 298   |
+| MUM                           | X     |
+| NN                            | 454   |
+| NQU                           | 245   |
+| STO                           | 27    |
+-------------------------------------------------------------
+
 
 AES - NA
 
