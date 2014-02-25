@@ -35,33 +35,11 @@ Name of Benchmark Program | Number of Instructions
 | CP                            | 117   |   
 | LIB                           | 1396  |   
 | LPS                           | 298   |
-| MUM                           | X     |
+| MUM                           | NA    |
 | NN                            | 454   |
 | NQU                           | 245   |
 | STO                           | 27    |
 -------------------------------------------------------------
-
-
-AES - NA
-
-BFS - 255
-
-CP - NA
-
-DG - NA
-
-LIB - NA
-
-LPS - NA
-
-MUM - NA
-
-NN - NA
-
-NQU - NA
-
-RAY - 2129
-
 
 
 Note that NA means "not available." After looking at the code and number of lines for BFS and RAY, the number of instructions found for each, 255 and 2129 respectively, looks reasonable and close to the expected value.
