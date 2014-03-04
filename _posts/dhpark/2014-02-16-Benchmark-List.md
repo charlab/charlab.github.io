@@ -28,9 +28,10 @@ The output file of the benchmark will be saved in `/data/charlab/gpgpu-sim/RESUL
 | GTX480 Unified Cluster        |       |   X   |       |       |       |       |       |       |
 | GTX480 Unified Core [4:64:4]  |   X   |   X   |   X   |   X   | Error |   X   |   X   |   X   |
 | GTX480 Unified Core [60:64:4] |   X   |   X   |   X   |   X   | Error |   X   |   X   |   X   |
-| GTX480 Unified Core [32:64:4] |   X   |   X   |   X   |   X   |       |   X   |   X   |   X   |
-|                               |       |       |       |       |       |       |       |       |
-|                               |       |       |       |       |       |       |       |       |
+| GTX480 Unified Core [32:64:4] |   X   |   X   |   X   |   X   | Error |   X   |   X   |   X   |
+| GTX480 Unified Core [16:64:4] |   X   |   X   |   X   |   X   | Error |   X   |   X   |   X   |
+| GTX480 Unified Core [8:64:4]  |   X   |   X   |   X   |   X   | Error |   X   |   X   |   X   |
+| GTX480 Unified Core [2:64:4]  |   X   |   X   |   X   |   X   | Error |   X   |   X   |   X   |
 
 --
 
