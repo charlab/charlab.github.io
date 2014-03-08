@@ -45,11 +45,18 @@ Spjut will try to bring in server w/ gpu and put on network
 
 Answer to our 3rd question:
 •	Warp is a thread; we issue two and send two instructions to be executed in lockstep
-•	Crappy answer, spjut, but he moved on and it probably won’t help
+
 We found the instruction cache at the top of the code printout!
--gpgpu_cache:il1     4:128:4,L:R:f:N,A:2:32,4 # shader L1 instruction cache config  {<nsets>:<bsize>:<assoc>,<rep>:<wr>:<alloc>:<wr_alloc>,<mshr>:<N>:<merge>,<mq>}
-4-way set associative cache
-Erik is changing cache to 16 to make it smaller and see if we get more conflicts (the sm; we need more cores per sm); you need more cores if they’re running slower;
-care more about power efficiencysmaller (Did a lot for kepler, especially mobile version of kepler)
+
+- gpgpu_cache:il1     4:128:4,L:R:f:N,A:2:32,4 # shader L1 instruction cache config {<nsets>:<bsize>:<assoc>,<rep>:<wr>:<alloc>:<wr_alloc>,<mshr>:<N>:<merge>,<mq>}
+
+- GPU config is a 4-way set associative cache
+
+- Erik is changing cache to 16 to make it smaller and see if we get more conflicts (the sm; we need more cores per sm); 
+
+- you need more cores if they’re running slower;
+
+- care more about power efficiency; want it to be smaller (Did a lot for kepler, especially mobile version of kepler)
 4 = 72 cores, 5 = full sm/kepler sm  logan
-Send link to paul: http://archive.is/uYtpO (GPGPU-Sim manual, definition of reservation fail)
+
+- The link for Paul: http://archive.is/uYtpO (GPGPU-Sim manual, definition of reservation fail)
