@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Stall and Miss Rates for Various Cache Sizes"
+title: "Varying Cache Sizes: Stall and Miss Rates"
 description: ""
 category: "sphynx"
 tags: [blog]
