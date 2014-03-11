@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "2014-2-25-Minutes"
+title: "Stall and Miss Rates for Various Cache Sizes"
 description: ""
 category: "sphynx"
 tags: [blog]
