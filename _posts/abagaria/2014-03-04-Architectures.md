@@ -8,7 +8,7 @@ author: abagaria
 ---
 {% include JB/setup %}
 
-In this blog, I have detailes some relavant stats about some of the more recent architectures.
+In this blog, I have detailed some relavant stats about some of the more recent architectures.
 These stats are in the form of SM Block Diagrams and hardware specifications in tables. 
 All the information used to compile this blog has been taken from NVIDI's white papers 
 talking about the respective architectures. 
