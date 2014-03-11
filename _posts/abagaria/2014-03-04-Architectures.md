@@ -48,4 +48,8 @@ Beyond the SM, the other big architectural change in Maxwell is the growth of th
 
 ![Fermi vs. Kepler](http://i.imgur.com/pB9ApO6.png?1)
 
+The number of registers/thread is 255. 
+
 ![Fermi SM Block Diagram](http://i.imgur.com/6PftUQ2.png?1)
+
+![Warp Scheduler](http://i.imgur.com/Am3HxJk.png)
