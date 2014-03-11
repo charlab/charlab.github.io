@@ -13,7 +13,7 @@ I looked at the miss and stall rates of the benchmarks when varying the cache si
 
 Here is a table of the data:
 
-![datatable](http://i.imgur.com/Eec7yd9)
+![datatable](http://i.imgur.com/Eec7yd9.png)
 
 
 Here is a bar graph comparing the miss and stall rates for the 2 configurations for each benchmark. A data table is included underneath corresponding to each bar.
