@@ -61,7 +61,7 @@ We see that the miss rate increased. This is due to an increase in the rapid rec
 
 ![8_4_8]({{ site.url }}/images/estorm/sp_omp-srrip-8_4_8.PNG)
 
-We see that again there is not an improvement in misses relative to 9_4_4. We find that the rapid recache went down considerably, however there's no way to increase the associativity that we haven't already tested! So we conclude that the optimal cache configuration is 9_4_4. 
+We see that again there is not an improvement in misses relative to 9\_4\_4. We find that the rapid recache went down considerably, however there's no way to increase the associativity that we haven't already tested! So we conclude that the optimal cache configuration is 9\_4\_4. 
 
 Having run nearly all of the reasonable cache configurations, this does in fact appear to be the optimal cache configuration. 
 
