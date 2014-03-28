@@ -59,4 +59,10 @@ We see very minor improvement in the misses, because the slower recache rates ha
 
 We see that the miss rate increased. This is due to an increase in the rapid recaching without significant improvement in the slower recaches. This leaves the only reasonable place for improvement to be to go back to the 9\_4\_4 configuration and decrease the number of sets instead of the line length, to get 8\_4\_8:
 
-I haven't run simulations for this one yet!
+![8_4_8]({{ site.url }}/images/estorm/sp_omp-srrip-8_4_8.PNG)
+
+We see that again there is not an improvement in misses relative to 9_4_4. We find that the rapid recache went down considerably, however there's no way to increase the associativity that we haven't already tested! So we conclude that the optimal cache configuration is 9_4_4. 
+
+Having run nearly all of the reasonable cache configurations, this does in fact appear to be the optimal cache configuration. 
+
+I am running more cache configurations and when they finish, I'd like to repeat this process to determine whether it consistently finds the optimal cache configuration. 
