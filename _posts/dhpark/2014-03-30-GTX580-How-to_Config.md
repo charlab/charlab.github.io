@@ -59,7 +59,7 @@ There's only one thing that needs to be changed in this file.
 
  * `k = 28` - This is the topology of the simulated GPU.  
 
-This defines the Topology configuration (refer to http://gpgpu-sim.org/manual/index.php5/GPGPU-Sim_3.x_Manual#Topology_Configuration)  
+This defines the [Topology configuration](http://gpgpu-sim.org/manual/index.php5/GPGPU-Sim_3.x_Manual#Topology_Configuration)  
 `k` should equal `gpgpu_n_clusters + gpgpu_n_mem*gpgpu_n_sub_partition_per_mchannel` from `gpgpu_config`. For GTX580 configuration, since `n_mem = 6` and `sub_partition = 2`, we need `k = n_clusters + 12`.
 
 ### Current status of testing:
