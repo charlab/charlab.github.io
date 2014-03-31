@@ -61,6 +61,8 @@ There's only one thing that needs to be changed in this file.
 
 This variable defines the [Topology configuration](http://gpgpu-sim.org/manual/index.php5/GPGPU-Sim_3.x_Manual#Topology_Configuration). `k` should equal `gpgpu_n_clusters + gpgpu_n_mem*gpgpu_n_sub_partition_per_mchannel` from `gpgpu_config`. For GTX580 configuration, since `n_mem = 6` and `sub_partition = 2`, we need `k = n_clusters + 12`.
 
+
+
 ### Current status of testing:
 
 These are the cache parameters that have been simulated for each core configuration:
@@ -71,7 +73,31 @@ These are the cache parameters that have been simulated for each core configurat
    * `4_128_2` , `4_128_4` , `4_128_6` , `4_128_8` , `4_128_10` ,  `4_128_12` , `4_128_14` , `4_128_16` , `4_128_20` , `4_128_24` , `4_128_32` 
    * `6_128_4`
    * `8_128_4` 
+ * 02SM
+   * `1_128_32`
+   * `2_128_4` , `2_128_16`
+   * `4_128_2` , `4_128_4` , `4_128_6` , `4_128_8` , `4_128_10` , `4_128_16`
+   * `6_128_4`
+   * `8_128_4`
+   *  `12_128_4`
+   * `16_128_4`
+ * 04SM
+   * `1_128_4`
+   * `2_128_4` , `2_128_16` , `2_128_32` 
+   * `4_128_1` , `4_128_2` , `4_128_4` , `4_128_6` , `4_128_8` ,  `4_128_12` , `4_128_10` , `4_128_16` ,  `4_128_24`  
+   * `6_128_4`  
+   * `8_128_4` 
+   * `16_128_4`
+ * 08SM
+    * `2_128_4`
+    * `4_128_2`  , `4_128_4` , `4_128_8` 
+    * `8_128_4` 
+ * 16SM (default)
+   * `2_128_4`
+   * `4_128_4`
+ 
 
+Fabhia's currently processing all the data we got from all the runs.
 
 
 
