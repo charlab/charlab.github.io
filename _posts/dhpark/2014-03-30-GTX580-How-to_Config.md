@@ -18,8 +18,9 @@ This is the fully unlocked version of `GTX480` that have been provided by GPGPU-
 ### How to Configure GPU Cores to share L1I cache
 
 There are two files that need to be changed:
- * `gpgpusim.config`
- * `config_fermi_islip.icnt`
+
+ * `gpgpusim.config`  
+ * `config_fermi_islip.icnt`  
 
 Considering how default GTX580 has total of 16SM cores, let `NSCALE` be the number of SM cores we want to group together. (ex. if `NSCALE = 2`, we are having every two cores share a signle L1I, resulting in 8 total L1I caches)
 
@@ -29,12 +30,13 @@ Remember that we are having the cores share common caches by merging cores toget
 #### In `gpgpusim.config`
 
 Here's the list of parameters that need to be changed:
- * `gpgpu_n_clusters 16/NSCALE` - Number of SIMT clusters
- * `gpgpu_shader_registers 32768*NSCALE` - Number of Shader Core registers
- * `gpgpu_shader_core_pipeline 1536*NSCALE:32` - Number of threads in the pipeline
- * `gpgpu_shader_cta 8*NSCALE` - Number of Cooperative Thread Arrays per shader core
- * `gpgpu_num_sched_per_core 2*NSCALE` - Number of schedulers per core
- * `gpgpu_cache:il1` - Instruction cache architecture
+
+ * `gpgpu_n_clusters 16/NSCALE` - Number of SIMT clusters  
+ * `gpgpu_shader_registers 32768*NSCALE` - Number of Shader Core registers  
+ * `gpgpu_shader_core_pipeline 1536*NSCALE:32` - Number of threads in the pipeline  
+ * `gpgpu_shader_cta 8*NSCALE` - Number of Cooperative Thread Arrays per shader core  
+ * `gpgpu_num_sched_per_core 2*NSCALE` - Number of schedulers per core  
+ * `gpgpu_cache:il1` - Instruction cache architecture  
 
 
 `gpgpu_n_clusters` - For cores to share instruction cache, we need them to be in the same cluster, so we reduce the cluster count by how many caches there are.
