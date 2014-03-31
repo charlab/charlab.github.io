@@ -8,9 +8,8 @@ author: dhpark
 ---
 {% include JB/setup %}
 
-This post will consists of two parts: first part will talk about the configuration of `GTX580` and the second part will talk about how I have been configuring GPGPU-Sim to have multiple SMs share common instruction cache.
 
-### Introducing GTX580
+### Introducing GTX580!
 
 This is the fully unlocked version of `GTX480` that have been provided by GPGPU-Sim. The only real difference is that we are going from 15 SM cores to 16 SM cores. This is done by setting `gpgpu_n_clusters` parameter in the config file, and everything else remains the same.
 
@@ -65,7 +64,8 @@ This variable defines the [Topology configuration](http://gpgpu-sim.org/manual/i
 
 ### Current status of testing:
 
-These are the cache parameters that have been simulated for each core configuration:
+These are the cache parameters that have been simulated for each core configuration.  
+The L1I configurations are specified as: `SetNum_BlockSize_Associativity`
 
  * 01SM
    * `1_128_24` , `1_128_32`
