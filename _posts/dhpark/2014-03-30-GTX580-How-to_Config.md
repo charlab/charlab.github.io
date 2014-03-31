@@ -14,6 +14,9 @@ author: dhpark
 This is the fully unlocked version of `GTX480` that have been provided by GPGPU-Sim. The only real difference is that we are going from 15 SM cores to 16 SM cores. This is done by setting `gpgpu_n_clusters` parameter in the config file, and everything else remains the same.
 
 
+======
+
+
 ### How to Configure GPU Cores to share L1I cache
 
 There are two files that need to be changed:
@@ -60,6 +63,8 @@ There's only one thing that needs to be changed in this file.
 
 This variable defines the [Topology configuration](http://gpgpu-sim.org/manual/index.php5/GPGPU-Sim_3.x_Manual#Topology_Configuration). `k` should equal `gpgpu_n_clusters + gpgpu_n_mem*gpgpu_n_sub_partition_per_mchannel` from `gpgpu_config`. For GTX580 configuration, since `n_mem = 6` and `sub_partition = 2`, we need `k = n_clusters + 12`.
 
+
+======
 
 
 ### Current status of testing:
