@@ -59,10 +59,20 @@ There's only one thing that needs to be changed in this file.
 
  * `k = 28` - This is the topology of the simulated GPU.  
 
-This defines the [Topology configuration](http://gpgpu-sim.org/manual/index.php5/GPGPU-Sim_3.x_Manual#Topology_Configuration)  
-`k` should equal `gpgpu_n_clusters + gpgpu_n_mem*gpgpu_n_sub_partition_per_mchannel` from `gpgpu_config`. For GTX580 configuration, since `n_mem = 6` and `sub_partition = 2`, we need `k = n_clusters + 12`.
+This variable defines the [Topology configuration](http://gpgpu-sim.org/manual/index.php5/GPGPU-Sim_3.x_Manual#Topology_Configuration). `k` should equal `gpgpu_n_clusters + gpgpu_n_mem*gpgpu_n_sub_partition_per_mchannel` from `gpgpu_config`. For GTX580 configuration, since `n_mem = 6` and `sub_partition = 2`, we need `k = n_clusters + 12`.
 
 ### Current status of testing:
+
+These are the cache parameters that have been simulated for each core configuration:
+
+ * 01SM
+   * `1_128_24` , `1_128_32`
+   * `2_128_24` , `2_128_4` , `2_128_16` `2_128_32`
+   * `4_128_2` , `4_128_4` , `4_128_6` , `4_128_8` , `4_128_10` ,  `4_128_12` , `4_128_14` , `4_128_16` , `4_128_20` , `4_128_24` , `4_128_32` 
+   * `6_128_4`
+   * `8_128_4` 
+
+
 
 
 
