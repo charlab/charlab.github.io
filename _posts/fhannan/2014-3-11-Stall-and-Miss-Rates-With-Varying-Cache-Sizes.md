@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Varying Parameters: Stall and Miss Rates"
+title: "Varying Parameters with the GTX480: Stall and Miss Rates"
 description: ""
 category: "sphynx"
 tags: [blog]
