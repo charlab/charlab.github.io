@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Characterisations"
+title: "Characterisation"
 description: ""
 category: "sphynx"
 tags: [gpgpu, sphynx]
