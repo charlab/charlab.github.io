@@ -1,3 +1,13 @@
+---
+layout: post
+title: "Characterisations"
+description: ""
+category: "sphynx"
+tags: [gpgpu, sphynx]
+author: abagaria
+---
+{% include JB/setup %}
+
 BFS finds use in state space searching, graph partitioning, automatic theorem proving,
 etc., and is one of the most used graph operation in practical graph algorithms. The BFS
 problem is, given an undirected, unweighted graph G(V,E) and a source vertex S, find
@@ -97,3 +107,7 @@ MMU
  partitions the query sequences into sets, called QueryBlocks, depending
  on the memory available on the GPU. Sequences within a given QueryBlock
  are aligned in parallel on the GPU.
+ 
+ The algotithm used in MMU is shown here:
+ 
+ http://www.biomedcentral.com/1471-2105/8/474/figure/F4
