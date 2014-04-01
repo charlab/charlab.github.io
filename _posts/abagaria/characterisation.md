@@ -92,3 +92,8 @@ explicit-water biomolecular model.
 
 MMU
 ====
+
+ MUMmerGPU builds multiple suffix trees of the reference and
+ partitions the query sequences into sets, called QueryBlocks, depending
+ on the memory available on the GPU. Sequences within a given QueryBlock
+ are aligned in parallel on the GPU.
