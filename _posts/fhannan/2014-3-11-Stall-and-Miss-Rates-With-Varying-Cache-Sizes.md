@@ -10,7 +10,7 @@ author: fhannan
 
 [edited/corrected version]
 
-I looked at the miss and stall rates of the benchmark programs when varying the number of sets (called NumSet) and ran on the GTX480 machine. In particular, I looked at a Unicore (or one core cluster) with a 64 KB block size and 4-way set associativity. The NumSet was varied as 2, 4, 8, 16, and 60.
+I looked at the miss and stall rates of the benchmark programs when varying the number of sets (called NumSet) and ran on the GTX480 machine. In particular, I looked at a Unicore (or one core cluster) with a 64 byte block size and 4-way set associativity. The NumSet was varied as 2, 4, 8, 16, and 60.
 
 Here is a table of the miss and stall rate data:
 
