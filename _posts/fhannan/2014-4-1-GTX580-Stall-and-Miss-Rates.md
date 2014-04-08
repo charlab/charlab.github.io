@@ -9,7 +9,9 @@ author: fhannan
 {% include JB/setup %}
 
 
-Donghyeon and I looked at the miss and stall rates of the benchmark programs when varying the number of cores used. Refer to his blog post for more detailed explanations of the parameters varied. As mentioned in his post, the GTX580 has 16 SM cores. Thus, the number of SM cores were varied as 1, 2, 4, 8, and 16. We looked at benchmark programs with 128 byte block size and variable associativity from 2 to 32 in increments of 2 and variable SetNum of 1, 2, 4, 6, 8, 12, and 16. However, these did not affect the miss and stall rate values as the values were almost always the same. So I took the mode value and used that for the graph for varying number of cores.
+Donghyeon and I looked at the miss and stall rates of the benchmark programs when varying the number of cores used. Refer to [his blog post (here)][dhpost] for more detailed explanations of the parameters varied. As mentioned in his post, the GTX580 has 16 SM cores. Thus, the number of SM cores were varied as 1, 2, 4, 8, and 16. We looked at benchmark programs with 128 byte block size and variable associativity from 2 to 32 in increments of 2 and variable SetNum of 1, 2, 4, 6, 8, 12, and 16. However, these did not affect the miss and stall rate values as the values were almost always the same. So I took the mode value and used that for the graph for varying number of cores.
+
+[dhpost]: http://charlab.github.io/sphynx/2014/03/30/GTX580-How-to_Config/
 
 Here is the bar graph of the miss and stall rate data:
 
