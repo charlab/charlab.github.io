@@ -12,7 +12,7 @@ author: dhpark
 Sorry for the delay, but I finally modified the GPGPU-sim code to print early cache statistics so we can adjust for compulsory misses. The original plan was to have all our benchmarks have some sort of a dry-run initially to fill up the cache before collecting data, but looking at the source code, trying to manipulate when/how the benchmarks are run is going to be pretty tricky. So intead, we are settling for printing the cache statistics early (like after first 10,000 cycles), then comparing it with the final cache statistics once everything finishes running.
 
 Read on for details on how the soruce code was modified.
-======
+
 
 
 ### GPGPU-Sim Source Code Changes
@@ -46,7 +46,7 @@ void gpgpu_sim::print_l1_cache_statistics()
 This code basically tells the gpgpu-sim object to print the current L1 cache statistics for each core. I had the `cycle()` command call this method. Write now, `cycle()` method simulates a single cycle of gpu execuation, then prints a one-line status every 500-1000 cycles. I inserted this line when in the block of code that prints these statistics so the cache statics get printed after the first 10,000 cycles:
 
 ``` cpp
-      if (gpu_sim_cycle == CACHE_PRINT_CYCLE_COUNT)
+if (gpu_sim_cycle == CACHE_PRINT_CYCLE_COUNT)
 	print_l1_cache_statistics();
 ```
 
