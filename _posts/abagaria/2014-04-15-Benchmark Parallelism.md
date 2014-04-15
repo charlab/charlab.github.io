@@ -1,3 +1,13 @@
+---
+layout: post
+title: "Benchmark Parallelism"
+description: ""
+category: "sphynx"
+tags: [gpgpu, sphynx]
+author: abagaria
+---
+{% include JB/setup %}
+
 RAY
 ----
 
@@ -12,9 +22,9 @@ Coulombic Potential (CP)
 
 Number of threads in each block = 16 x 8 = 128 threads.
 
-VOLSIZE_X = 512         VOLSIZE_Y = 512
+VOLSIZEX = 512         VOLSIZEY = 512
 
-BLOCKSIZE_X = 16        BLOCKSIZE_Y = 8
+BLOCKSIZEX = 16        BLOCKSIZEY = 8
 
 UNROLLX = 1
 
