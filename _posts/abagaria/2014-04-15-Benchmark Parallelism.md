@@ -8,6 +8,19 @@ author: abagaria
 ---
 {% include JB/setup %}
 
+Analysis of Parallelism in Ray Tracing and Coulombic Potential Benchmarks
+=========================================================================
+
+Last week, Fahiba and DH generated some very interesting plots which gave
+us a lot of insight into the different benchmarks that we were using in our
+project. So this week, I set out to understand the reasons behind some of
+the trends that they spoke about in their blog by examining in important 
+characteristic of these benchmark programs: their degree of parallism or in 
+other words the number of software work elements that each program issues to the 
+GPU when executing in hardware. The following calculations have been derived 
+from the CUDA source files and are a representation of the level of parallelism
+employed by 2 programs which we found interesting as per Fahiba and DH's blog. 
+
 RAY
 ----
 
