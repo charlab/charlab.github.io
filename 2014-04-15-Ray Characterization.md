@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "RAY Characterization"
+title: "Ray Characterization"
 description: ""
 category: "sphynx"
 tags: [gpgpu, sphynx]
