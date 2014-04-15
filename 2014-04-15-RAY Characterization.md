@@ -30,4 +30,9 @@ This ensured that the RAY benchmark was executing as parallel in software as the
 benchmark in the number of work elements that it was issuing. Given that the RAY CUDA file issues more
 instructions in its core computation that CP does, and that a lot of its instructions (CUDA instructions)
 seem to be computationally more expensive, RAY can now be treated as both a long program which would 
-occupy a significant amount of space in the instruction cache (and hence would not be entirely resident)
+occupy a significant amount of space in the instruction cache (and hence would not be entirely resident in
+the instruction cache) AND would issue those instructions with a high degree of parallelism.
+
+In order to examine the affect of changing the software parallelism issued by Ray, we repeated the 
+methodology that Fabiha and DH had employed when they were examining the performance of the different 
+benchmarks as a function of the number of SM cores. 
