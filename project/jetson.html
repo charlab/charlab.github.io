@@ -1,0 +1,37 @@
+---
+layout: page
+title: Jetson
+header: Course Development
+group: projects
+author_ids: [jspjut]
+---
+{% include JB/setup %}
+
+<div class="col-md-7">
+
+<p>
+A new course is being developed to use the NVIDIA Jetson TK1 board to
+use traditional game controller input as well as novel human computer
+interfaces to control games.
+The intent is to also exploit the massive parallel computation
+available in the GPU for image processing tasks.
+</p>
+
+<h2>Recent Blog Posts</h2>
+{% for category in site.categories %}
+  {% if category[0] == "jetson" %}
+    {% assign pages_list = category[1] %}
+    {% include JB/pages_list %}
+  {% endif %}
+{% endfor %}
+
+<ul class="tag_box inline"><li><a href="{{ site.url }}/categories.html#jetson-ref">jetson</a></li></ul>
+
+</div>
+
+<div class="col-md-5">
+<h2>People</h2>
+<div class="authors">
+  {% include custom/author_list %}
+</div>
+</div>

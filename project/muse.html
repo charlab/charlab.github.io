@@ -1,0 +1,35 @@
+---
+layout: page
+title: MUSE
+header: Multi-User Single Experience
+group: projects
+author_ids: [jspjut]
+---
+{% include JB/setup %}
+
+<div class="col-md-7">
+
+<p>
+The goal of this project is to discover new methods for interaction
+among many users of a single experience.
+This is greatly influenced by the twitch plays pokemon phenomenon.
+</p>
+
+<h2>Recent Blog Posts</h2>
+{% for category in site.categories %}
+  {% if category[0] == "muse" %}
+    {% assign pages_list = category[1] %}
+    {% include JB/pages_list %}
+  {% endif %}
+{% endfor %}
+
+<ul class="tag_box inline"><li><a href="{{ site.url }}/categories.html#muse-ref">muse</a></li></ul>
+
+</div>
+
+<div class="col-md-5">
+<h2>People</h2>
+<div class="authors">
+  {% include custom/author_list %}
+</div>
+</div>
