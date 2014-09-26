@@ -1,8 +1,10 @@
+{% unless author_ids %}
 {% if page.author_ids %}
   {% assign author_ids = page.author_ids %}
 {% else %}
   {% assign author_ids = site.author_ids %}
 {% endif %}
+{% endunless %}
 
   {% for author_id in author_ids %}
   {% assign post_author = site.post_authors[author_id] %}

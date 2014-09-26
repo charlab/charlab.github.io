@@ -3,9 +3,18 @@ layout: page
 title: "People"
 description: "CHAR Lab People"
 group: navigation
+current_list: [jspjut]
+past_list: [dhpark, estorm, abagaria, fhannan, pjolly]
 ---
 {% include JB/setup %}
 
 <div class="authors">
+  {% assign author_ids = page.current_list %}
+  {% include custom/author_list %}
+</div>
+
+<h2>Past Members</h2>
+<div class="authors">
+  {% assign author_ids = page.past_list %}
   {% include custom/author_list %}
 </div>

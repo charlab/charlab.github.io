@@ -29,10 +29,11 @@ post_authors :
   jspjut :
     display_name : Josef Spjut
     job_title : Professor
-    bio : 'Josef is a professor of engineering at Harvey Mudd College
-        and a consulting researcher for NVIDIA. He received his Ph.D. from
-	University of Utah and his B.S in Computer Engineering from
-    	University of California Riverside.'
+    bio : 'Josef is a visiting assistant professor of computer
+        engineering at Harvey Mudd College and a consulting researcher
+	for NVIDIA. He received his Ph.D. from University of Utah and
+	his B.S in Computer Engineering from University of California
+	Riverside.'
     email : jspjut@g.hmc.edu
     web : http://jspjut.github.io/
     twitter :
@@ -43,7 +44,7 @@ post_authors :
   dhpark :
     display_name : Dong-hyeon Park
     job_title : B.S. Engineering 2014
-    bio : 'Dong-hyeon has taken MicroPs, Parallel Architecture and Embedded Systems.'
+    bio : 'Dong-hyeon graduated in 2014 and is now a Ph.D. student at Michigan.'
     email : dhpark@g.hmc.edu
     web : 
     twitter : 
@@ -52,7 +53,7 @@ post_authors :
   estorm :
     display_name : Eric Storm
     job_title : B.S. Engineering 2015
-    bio : 'Eric has taken MicroPs and is taking Embedded Systems.'
+    bio : 'Eric is now a Clay-Wolkin Fellow.'
     email : estorm@g.hmc.edu
     web : 
     twitter : 
@@ -61,7 +62,7 @@ post_authors :
   fhannan :
     display_name : Fabiha Hannan
     job_title : B.S. Engineering 2016
-    bio : 'Fabiha has taken and is currently grading E85.'
+    bio : 'Fabiha is a grader for E85.'
     email : fhannan@g.hmc.edu
     web : 
     twitter : 
@@ -70,7 +71,7 @@ post_authors :
   abagaria :
     display_name : Akhil Bagaria
     job_title : B.S. Engineering 2016
-    bio : 'Akhil has taken E85.'
+    bio : 'Akhil have moved on to projects with LAIR.'
     email : abagaria@hmc.edu
     web : abagaria.wordpress.com
     twitter : 
@@ -79,7 +80,7 @@ post_authors :
   pjolly :
     display_name : Paul Jolly
     job_title : B.S. Engineering 2016
-    bio : 'Paul is taking E85.'
+    bio : 'Paul is a grader for E85.'
     email : pjolly@g.hmc.edu
     web : 
     twitter : 
