@@ -41,6 +41,79 @@ post_authors :
     linkedin : josefspjut
 # email, web, twitter, github, linkedin all optional
 # recommended student job_title as "B.S. Engineering 2015"
+  dshim :
+    display_name : Da Eun Shim
+    job_title : B.S. Engineering 2016
+    bio : ''
+    email : @g.hmc.edu
+    web : 
+    twitter : 
+    github : 
+    linkedin : 
+  mngai :
+    display_name : Amy Ngai
+    job_title : B.S. Engineering 2016
+    bio : ''
+    email : @g.hmc.edu
+    web : 
+    twitter : 
+    github : 
+    linkedin : 
+  relminyawi :
+    display_name : Ramy Elminyawi
+    job_title : B.S. Engineering 2016
+    bio : ''
+    email : @g.hmc.edu
+    web : 
+    twitter : 
+    github : 
+    linkedin : 
+  afishberg :
+    display_name : Andrew Fishberg
+    job_title : B.S. Engineering 2016
+    bio : ''
+    email : @g.hmc.edu
+    web : 
+    twitter : 
+    github : 
+    linkedin : 
+  knlau :
+    display_name : Kirklann Lau
+    job_title : B.S. Engineering 2016
+    bio : ''
+    email : @g.hmc.edu
+    web : 
+    twitter : 
+    github : 
+    linkedin : 
+  rpiersall :
+    display_name : Richard Piersall
+    job_title : B.S. Engineering 2016
+    bio : ''
+    email : @g.hmc.edu
+    web : 
+    twitter : 
+    github : 
+    linkedin : 
+  szwilliams :
+    display_name : Skyler Williams
+    job_title : B.S. Computer Science 2016
+    bio : ''
+    email : @g.hmc.edu
+    web : 
+    twitter : 
+    github : 
+    linkedin : 
+  lbrann :
+    display_name : Louis Brann
+    job_title : B.S. Computer Science 2016
+    bio : ''
+    email : @g.hmc.edu
+    web : 
+    twitter : 
+    github : 
+    linkedin : 
+# 2013-2014 members
   dhpark :
     display_name : Dong-hyeon Park
     job_title : B.S. Engineering 2014
@@ -86,25 +159,8 @@ post_authors :
     twitter : 
     github : paul-jolly
     linkedin :
-# Others who expressed interest
-  vkanwar :
-    display_name : Varun Kanwar
-    job_title : B.S. Engineering 2014
-    bio : 'Varun is taking MicroPs'
-    email : 
-    web : 
-    twitter : 
-    github : 
-    linkedin : 
-  smourad :
-    display_name : Sami Mourad
-    job_title : B.S. Engineering 2014
-    bio : 'Sami is taking MicroPs.'
-    email : 
-    web : 
-    twitter : 
-    github : 
-    linkedin : 
+##### End authors section
+
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
 # Most places will/should use BASE_PATH to make the urls
