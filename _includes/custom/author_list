@@ -14,6 +14,8 @@
          <a href="{{ post_author.web }}">
 	   <span width="150" height="150">Image!</span>
          </a> -->
+    <img class="headshot" src="{{ site.url }}/images/{{ author_id }}/{{ post_author.image }}"
+      onerror="this.src='{{ site.url }}/images/jspjut/default-headshot.png'" />
     <h3>{{ post_author.display_name }}</h3>
     <p class="muted">{{ post_author.job_title }}
       | <a href="{{ site.url }}/blog/index.html#{{ author_id }}">blog posts</a>

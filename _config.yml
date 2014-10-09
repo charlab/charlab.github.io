@@ -22,7 +22,7 @@ author :
 #  twitter : charlab
 #  feedburner : feedname
 
-# List of authors for people page
+# Old list of authors for people page
 author_ids: [jspjut, estorm, dhpark, fhannan, abagaria, pjolly]
 # Author section for multiple author info
 post_authors :
@@ -35,6 +35,7 @@ post_authors :
 	his B.S in Computer Engineering from University of California
 	Riverside.'
     email : jspjut@g.hmc.edu
+    image : jspjut.jpg
     web : http://jspjut.github.io/
     twitter :
     github : jspjut
@@ -46,6 +47,7 @@ post_authors :
     job_title : B.S. Engineering 2016
     bio : '.'
     email : dshim@g.hmc.edu
+    image : 
     web : 
     twitter : 
     github : 
@@ -55,6 +57,7 @@ post_authors :
     job_title : B.S. Engineering 2016
     bio : '.'
     email : mngai@g.hmc.edu
+    image : 
     web : 
     twitter : 
     github : 
@@ -64,6 +67,7 @@ post_authors :
     job_title : B.S. Engineering 2016
     bio : '.'
     email : relminyawi@g.hmc.edu
+    image : 
     web : 
     twitter : 
     github : 
@@ -73,6 +77,7 @@ post_authors :
     job_title : B.S. Engineering 2016
     bio : '.'
     email : afishberg@g.hmc.edu
+    image : 
     web : 
     twitter : 
     github : 
@@ -82,6 +87,7 @@ post_authors :
     job_title : B.S. Engineering 2016
     bio : '.'
     email : knlau@g.hmc.edu
+    image : 
     web : 
     twitter : 
     github : 
@@ -91,6 +97,7 @@ post_authors :
     job_title : B.S. Engineering 2016
     bio : '.'
     email : rpiersall@g.hmc.edu
+    image : 
     web : 
     twitter : 
     github : 
@@ -100,6 +107,7 @@ post_authors :
     job_title : B.S. Computer Science 2016
     bio : '.'
     email : szwilliams@g.hmc.edu
+    image : 
     web : 
     twitter : 
     github : 
@@ -109,6 +117,7 @@ post_authors :
     job_title : B.S. Computer Science 2016
     bio : '.'
     email : lbrann@g.hmc.edu
+    image : 
     web : 
     twitter : 
     github : 
@@ -119,6 +128,7 @@ post_authors :
     job_title : B.S. Engineering 2014
     bio : 'Dong-hyeon graduated in 2014 and is now a Ph.D. student at Michigan.'
     email : dhpark@g.hmc.edu
+    image : dhpark.jpg
     web : 
     twitter : 
     github : dhpark-hmc
@@ -128,6 +138,7 @@ post_authors :
     job_title : B.S. Engineering 2015
     bio : 'Eric is now a Clay-Wolkin Fellow.'
     email : estorm@g.hmc.edu
+    image : 
     web : 
     twitter : 
     github : EStorm21
@@ -137,6 +148,7 @@ post_authors :
     job_title : B.S. Engineering 2016
     bio : 'Fabiha is a grader for E85.'
     email : fhannan@g.hmc.edu
+    image : 
     web : 
     twitter : 
     github : fpjhannan
@@ -155,6 +167,7 @@ post_authors :
     job_title : B.S. Engineering 2016
     bio : 'Paul is a grader for E85.'
     email : pjolly@g.hmc.edu
+    image : 
     web : 
     twitter : 
     github : paul-jolly
