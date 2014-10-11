@@ -55,7 +55,9 @@ post_authors :
   mngai :
     display_name : Amy Ngai
     job_title : B.S. Engineering 2016
-    bio : '.'
+    bio : 'Amy is a junior engineering major with a focus on electrical and
+    	computer engineering. She is working on the motion control portion of
+    	the Jetson project, and is also a lab grader/tutor for E85.'
     email : mngai@g.hmc.edu
     image : 
     web : 
