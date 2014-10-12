@@ -55,7 +55,9 @@ post_authors :
   mngai :
     display_name : Amy Ngai
     job_title : B.S. Engineering 2016
-    bio : '.'
+    bio : 'Amy is a junior engineering major with a focus on electrical and
+    	computer engineering. She is working on the motion control portion of
+    	the Jetson project, and is also a lab grader/tutor for E85.'
     email : mngai@g.hmc.edu
     image : 
     web : 
@@ -105,12 +107,13 @@ post_authors :
   szwilliams :
     display_name : Skyler Williams
     job_title : B.S. Computer Science 2016
-    bio : '.'
+    bio : 'Skyler is a junior Computer Science major working on the MUSE project who has 
+    	interests in systems level computing and human-machine interactions.'
     email : szwilliams@g.hmc.edu
     image : 
     web : 
     twitter : 
-    github : 
+    github : SkylerWilliams
     linkedin : 
   lbrann :
     display_name : Louis Brann
