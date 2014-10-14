@@ -26,24 +26,24 @@ And then you reboot the system and the GUI should load. You only need to run ins
 
 
 # Links 
-This is just a compilation of the links I used so they are all in the same place.
+I met up with Ramy and we worked together to get familiar with the board.
+This is just a compilation of the links used so they are all in the same place.
 
-## Cuda
+
 [To download CUDA](http://elinux.org/Jetson/Installing_CUDA)
 
 [Documentation for CUDA samples](http://docs.nvidia.com/cuda/cuda-samples/#axzz3G3Cr6SfC)
 
 *You should definitely check out the sample simulations. Those are fun.
 
-## OpenCV
 [To download OpenCV](http://elinux.org/Jetson/Tutorials/OpenCV)
 
 [To test OpenCV](http://elinux.org/Jetson/Installing_OpenCV#Testing_OpenCV)
 
-[OpenCV Tutorial]{http://docs.opencv.org/doc/tutorials/tutorials.html)
+[OpenCV Tutorial](http://docs.opencv.org/doc/tutorials/tutorials.html)
 
 
-## Full-Detection Tutorial
+### Full-Detection Tutorial
 [Link to Full-Detection Tutorial](http://elinux.org/Jetson/Tutorials/Full_Body_Detection)
 
 * Note that if when you try to compile HOG with the instructions they give you:
