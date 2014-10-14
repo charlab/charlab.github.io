@@ -48,12 +48,12 @@ This is just a compilation of the links used so they are all in the same place.
 
 * Note that if when you try to compile HOG with the instructions they give you:
 
-{% highlight text %}
+```
 g++ hog.cpp -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_calib3d
 -lopencv_contrib -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_legacy 
 -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_photo -lopencv_stitching 
 -lopencv_superres -lopencv_video -lopencv_videostab -o hog
-{% endhighlight %}
+```
 
 You will get an error that says “cannot find -lopencv_nonfree.” Run the compiler
 instructions without that instructions (so just delete it) since that it from an
@@ -61,9 +61,9 @@ old version of the code. The dependency is no longer needed.
 
 If you try to run
 
-{% endhighlight %}
+```
 ./hog --video 768x576.avi
-{% endhighlight %}
+```
 
 You won’t see the graphical output. You need to install plugins to play media files of following type: DivX MPEG-4 Version 3 Decoder.
 
