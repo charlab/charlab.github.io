@@ -13,29 +13,29 @@ Hey guys,
 I’ve been working on setting up the Jetson TK1 development board to get it ready for some
 motion control fun. Here are some notes documenting what I've done.
 
-## Accessing the Board
+# Accessing the Board
 To access the board, you can do so directly,  or you can do so remotely
 through an Ethernet port. I chose to use direct access since I only have one Ethernet cable
 and didn’t want to set up a DHCP server on my Windows laptop. So I hooked up the board to
 HDMI display, got a usb hub (thanks Sky!), and attached a mouse and keyboard. 
 
-## Preparing GUI Desktop
+# Preparing GUI Desktop
 The first thing I did was set up the GUI desktop. The README instructions are found under ${HOME}/NVIDIA-INSTALLER. Basically, you just run the installer script using the command
 	sudo ./installer.sh
 And then you reboot the system and the GUI should load. You only need to run installer.sh once.
 
 
-## Links 
+# Links 
 This is just a compilation of the links I used so they are all in the same place.
 
-# Cuda
+## Cuda
 [To download CUDA](http://elinux.org/Jetson/Installing_CUDA)
 
 [Documentation for CUDA samples](http://docs.nvidia.com/cuda/cuda-samples/#axzz3G3Cr6SfC)
 
 *You should definitely check out the sample simulations. Those are fun.
 
-# OpenCV
+## OpenCV
 [To download OpenCV](http://elinux.org/Jetson/Tutorials/OpenCV)
 
 [To test OpenCV](http://elinux.org/Jetson/Installing_OpenCV#Testing_OpenCV)
@@ -43,7 +43,7 @@ This is just a compilation of the links I used so they are all in the same place
 [OpenCV Tutorial]{http://docs.opencv.org/doc/tutorials/tutorials.html)
 
 
-# Full-Detection Tutoria
+## Full-Detection Tutorial
 [Link to Full-Detection Tutorial](http://elinux.org/Jetson/Tutorials/Full_Body_Detection)
 
 * Note that if when you try to compile HOG with the instructions they give you:
