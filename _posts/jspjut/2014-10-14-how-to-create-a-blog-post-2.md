@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to create a blog post"
+title: "How to create a blog post 2"
 description: ""
 category: "tutorial"
 tags: [tutorial, blog, jekyll]
@@ -8,7 +8,7 @@ author: jspjut
 ---
 {% include JB/setup %}
 
-*Update:* I've made an [updated post]({% post_url jspjut/2014-10-14-how-to-create-a-blog-post-2 %}).
+This is an updated version of [this post]({% post_url jspjut/2013-10-22-how-to-create-a-blog-post %}).
 
 In this post, I'll explain how to use jekyll to create a blog post on
 this site.
@@ -32,18 +32,18 @@ in the file name.
 Additionally, all blog posts begin with the date in `YYYY-MM-DD`
 form.
 Since I gave this post the title of "How to create a blog post" my
-filename is therefore, `2013-10-22-how-to-create-a-blog-post.md`.
+filename is therefore, `2014-10-17-how-to-create-a-blog-post-2.md`.
 There is a command line tool that you can use if you have ruby
 installed on your machine to help you create a blog post file with the
 right filename and some starter frontmatter as follows:
 
-    rake post title="How to create a blog post"
+    rake post title="How to create a blog post 2" author="jspjut"
 
 Once you create your blog post file, you will want to ensure the
 frontmatter is structured correctly at the top. [note](http://stackoverflow.com/questions/3426182/how-to-escape-liquid-template-tags)
 On my post it looks like this:
 
-{% highlight text %}
+```
 ---
 layout: post
 title: "How to create a blog post"
@@ -53,7 +53,7 @@ tags: [tutorial, blog, jekyll]
 author: jspjut
 ---
 {{ "{% include JB/setup " }}%}
-{% endhighlight %}
+```
 
 For blog posts, `layout` should always be `post`. `title` should be
 whatever you choose as the title of your blog post, and if excluded,
@@ -82,12 +82,13 @@ I'll repeat a few of the most common things I use here.
 
 First, code and syntax highlighting are easy to produce.
 If you want highlighting here, then you can use 
-`{{ "{% highlight text " }}%}` to begin a block and 
-`{{ "{% endhighlight " }}%}` to end the code block.
-If you want code to be inline, then use backticks (\`) to surround
-your code. For example:
+triple backticks (\`\`\`) to begin and end a code block.
+If you want code to be inline, then use a single backtick (\`) to
+surround your code. For example:
 
-    This is an `example`
+```
+This is an `example`
+```
 
 Generates: 
 
@@ -96,11 +97,11 @@ This is an `example`
 If you type the following:
 
 {% highlight text %}
-{{ "{% highlight text " }}%}
+```
 This is a block of code I want to highlight as text
 Nothing much is going on here
    Spaces    count
-{{ "{% endhighlight " }}%}
+```
 {% endhighlight %}
 
 It generates:
@@ -115,7 +116,7 @@ If you want to enable code highlighting for a given language, then you
 should do something like the following C++ example:
 
 {% highlight text %}
-{{ "{% highlight c++ " }}%}
+```c++
 #include <cstdio>
 void main()
 {
@@ -123,12 +124,12 @@ void main()
   b += a;
   printf("a = %d, b = %d", a, b);
 }
-{{ "{% endhighlight " }}%}
+```
 {% endhighlight %}
 
 which renders as:
 
-{% highlight c++ %}
+```c++
 #include <cstdio>
 void main()
 {
@@ -136,7 +137,7 @@ void main()
   b += a;
   printf("a = %d, b = %d", a, b);
 }
-{% endhighlight %}
+```
 
 ## Images
 
