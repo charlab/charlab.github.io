@@ -69,7 +69,9 @@ post_authors :
   relminyawi :
     display_name : Ramy Elminyawi
     job_title : B.S. Engineering 2016
-    bio : '.'
+    bio : 'Ramy is a junior engineering major with a focus on electrical and 
+    	digital engineering. He is currently working on the CUDA post processing
+    	work on the Jetson project. '
     email : relminyawi@g.hmc.edu
     image : 
     web : 
