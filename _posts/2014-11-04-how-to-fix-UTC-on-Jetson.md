@@ -47,3 +47,9 @@ Update NTP
 # ntpdate -q ntp.ubuntu.com
 ```
 
+Set NTP 
+
+```
+# ntpdate -s ntp.ubuntu.com
+```
+
