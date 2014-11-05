@@ -25,7 +25,8 @@ Terminal window, also shown below.
 In order to manually fix date = 
 
 ```
-sudo date -s "YYYY-MM-DD hh:mm:ss" (year-month-day hour-minute-second)
+# sudo date -s "YYYY-MM-DD hh:mm:ss" 
+(year-month-day hour-minute-second)
 ```
 
 In order to configure time zone (opens up pseudo GUI, must use keyboard) = (512/16, 512/8) = (32, 64)
@@ -37,7 +38,7 @@ In order to configure time zone (opens up pseudo GUI, must use keyboard) = (512/
 In order to install NTP (permanently fix clock)
 
 ```
-sudo apt-get install ntp
+# sudo apt-get install ntp
 ```
 
 Update NTP 
