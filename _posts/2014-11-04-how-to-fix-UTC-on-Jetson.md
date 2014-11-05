@@ -17,7 +17,7 @@ is a built in clock for the Pacific time zone (it gives the time for Los Angeles
 I needed to download OpenGL to view some of the graphic demos that came with the CUDA install, but the download would
 not work because it said I was trying to "download a file from the future". Sounded awesome, but in reality was quite
 frustrating after the second or third time it happened. In order to fix the system clocks, I ran a few commands in the 
-Terminal window, also shown below.
+Terminal window, also shown below. 
 
 
 ##Terminal Commands
@@ -34,7 +34,7 @@ In order to configure time zone (opens up pseudo GUI, must use keyboard) = (512/
 # dpkg-reconfigure tzdata
 ```
 
-In order to install NTP 
+In order to install NTP (permanently fix clock)
 
 ```
 sudo apt-get install ntp
