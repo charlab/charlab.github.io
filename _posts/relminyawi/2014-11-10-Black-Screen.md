@@ -1,3 +1,13 @@
+---
+layout: post
+title: "Black Screen fix on Jetson"
+description: ""
+category: "Jetson"
+tags: [black screen, tutorial, blog, jetson, jekyll]
+author: relminyawi
+---
+{% include JB/setup %}
+
 Over the past few days, my Jetson tk1 L4T 19.2 board had the problem of logging out abruptly,
 which, after looking up the problem, I found out was a pretty common thing to happen. 
 After I ran an update, and tried rebooting, it started loading as usual, with the nVidia logo
