@@ -14,22 +14,22 @@ So you have a USB webcam installed and plugged into your board
 and you have OpenCV up and running. To test the integration, you can
 run one of OpenCV sample programs:
 
-'''
+```
 # Make sure we have installed a C++ compiler.
 sudo apt-get install build-essential g++
 # If you have a USB webcam plugged in to your board, then test one of the live camera programs.
 g++ laplace.cpp -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_calib3d -lopencv_contrib -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_video -lopencv_videostab -o laplace
 ./laplace
-'''
+```
 Source: [Testing OpenCV](from: http://elinux.org/Jetson/Installing_OpenCV#Natively_compiling_the_OpenCV_library_from_source_onboard_the_device)
 
 If you get the error:
 
-'''
+```
 HIGHGUI ERROR: V4L: index 0 is not correct!
 Could not initialize capturing...
 
-'''
+```
 
 Then unplug-and-replug in your webcam. Yes, the answer is as simple as that!
 
@@ -37,11 +37,11 @@ Then unplug-and-replug in your webcam. Yes, the answer is as simple as that!
 ## PyGame
 To install PyGame, simply run this command in terminal:
 
-'''
+```
 sudo apt-get install python-pygame
-'''
+```
 
-I downloaded a super simple clone of pong from (this source)[http://www.pygame.org/project-PongClone-1740-.html]. I'm considering providing
+I downloaded a super simple clone of pong from [this source](http://www.pygame.org/project-PongClone-1740-.html). I'm considering providing
 something as simple as this as basic starter code for the
 motion capture labs. Students have the option, and will be encouraged,
 to do more than just this simple pygame though.
