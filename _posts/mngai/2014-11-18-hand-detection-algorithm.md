@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hand Detection Algorithm!"
+title: "Hand Detection Algorithm"
 description: ""
 category: jetson
 tags: [tutorial, jetson, board, cuda, opencv, motion control]
@@ -22,7 +22,7 @@ provided from the link above.
 This part of the code is the includes and the definitions used
 later on in the code.
 
-'''
+```
 #include <stdio.h>
 
 #include <opencv2/imgproc/imgproc_c.h>
@@ -71,11 +71,11 @@ struct ctx {
 	int		hand_radius;
 	int		num_defects;
 };
-'''
+```
 
 This function initializes capture from the default video capturing
 device. Each frame of the video is stored in ctx->image.
-'''
+```
 void init_capture(struct ctx *ctx)
 {
 	ctx->capture = cvCaptureFromCAM(0);
@@ -85,10 +85,10 @@ void init_capture(struct ctx *ctx)
 	}
 	ctx->image = cvQueryFrame(ctx->capture);
 }
-'''
+```
 
 This function initialized the video recording.
-'''
+```
 void init_recording(struct ctx *ctx)
 {
 	int fps, width, height;
@@ -108,12 +108,12 @@ void init_recording(struct ctx *ctx)
 		exit(1);
 	}
 }
-'''
+```
 
 
 This function initializes the image output windows for the 
 video output and the thresholded image.
-'''
+```
 void init_windows(void)
 {
 	cvNamedWindow("output", CV_WINDOW_AUTOSIZE);
@@ -138,13 +138,13 @@ void init_ctx(struct ctx *ctx)
 	ctx->fingers = calloc(NUM_FINGERS + 1, sizeof(CvPoint));
 	ctx->defects = calloc(NUM_DEFECTS, sizeof(CvPoint));
 }
-'''
+```
 
 
 This uses built-in functions from the OpenCV library to modify each
 frame from the video. Comments are included in the code to
 describe what each built in function does.
-'''
+```
 void filter_and_threshold(struct ctx *ctx)
 {
 
@@ -154,12 +154,12 @@ void filter_and_threshold(struct ctx *ctx)
 	cvSmooth(ctx->temp_image3, ctx->temp_image3, CV_MEDIAN, 11, 11, 0, 0);
 
 	cvCvtColor(ctx->temp_image3, ctx->temp_image3, CV_BGR2HSV);
-'''
+```
 
 
 HSV values are used to detect skin color instead of RGB due to 
 wide range of skin tone with respect to hue.
-'''
+```
 	/*
 	 * Apply threshold on HSV values to detect skin color
 	 */
@@ -167,22 +167,22 @@ wide range of skin tone with respect to hue.
 		   cvScalar(0, 55, 90, 255),
 		   cvScalar(28, 175, 230, 255),
 		   ctx->thr_image);
-'''
+```
 
 Morphological transformations are done in binary images (true black
 or white). Morphological opening removes excess noise in an image.
 A really good link with lots of visuals explaining different types of morphological
 transformation can be found (here)[http://docs.opencv.org/trunk/doc/py_tutorials/py_imgproc/py_morphological_ops/py_morphological_ops.html]
-'''
+```
 	/* Apply morphological opening */
 	cvMorphologyEx(ctx->thr_image, ctx->thr_image, NULL, ctx->kernel,
 		       CV_MOP_OPEN, 1);
 	cvSmooth(ctx->thr_image, ctx->thr_image, CV_GAUSSIAN, 3, 3, 0, 0);
 }
-'''
+```
 
 Creates a contour of the thresholded, binary image.
-'''
+```
 void find_contour(struct ctx *ctx)
 {
 	double area, max_area = 0.0;
@@ -211,10 +211,10 @@ void find_contour(struct ctx *ctx)
 		ctx->contour = contour;
 	}
 }
-'''
+```
 
 Computes the characteristic of the convex hull in order to detect the hand.
-'''
+```
 void find_convex_hull(struct ctx *ctx)
 {
 	CvSeq *defects;
@@ -229,7 +229,7 @@ void find_convex_hull(struct ctx *ctx)
 		return;
 
 	ctx->hull = cvConvexHull2(ctx->contour, ctx->hull_st, CV_CLOCKWISE, 0);
-'''
+```
 
 If a hull is found, then the code searches for convexity defects. Convexity
 defects are considered any deviation from the contour of the hull.
@@ -237,7 +237,7 @@ The function cvConvexityDefects returns an array an array where each row
 contains these values [start point, end point, farthest point, approximate
 distance to farthest point]. From the defects, the center of the hand
 is calculated by averaging the distance of each defect.
-'''
+```
 	if (ctx->hull) {
 
 		/* Get convexity defects of contour w.r.t. the convex hull */
@@ -280,11 +280,11 @@ is calculated by averaging the distance of each defect.
 		}
 	}
 }
-'''
+```
 
 This functions finds the fingers of the hand based on the center
 of the hand.
-'''
+```
 void find_fingers(struct ctx *ctx)
 {
 	int n;
@@ -330,12 +330,12 @@ void find_fingers(struct ctx *ctx)
 
 	free(points);
 }
-'''
+```
 
 This functions displays the images, and draws geometric figures
 to illustrate where fingers and the palm of the hand are
 approximately detected.
-'''
+```
 void display(struct ctx *ctx)
 {
 	int i;
@@ -368,11 +368,11 @@ void display(struct ctx *ctx)
 	cvShowImage("output", ctx->image);
 	cvShowImage("thresholded", ctx->thr_image);
 }
-'''
+```
 
 
 Where it all gets put together.
-'''
+```
 int main(int argc, char **argv)
 {
 	struct ctx ctx = { };
@@ -399,6 +399,6 @@ int main(int argc, char **argv)
 
 	return 0;
 }
-'''
+```
 
 
