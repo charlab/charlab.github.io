@@ -11,7 +11,7 @@ author: mngai
 Hey all,
 
 For the motion capture lab, we are basing the hand detection algorithm on
-open source code found [here.](https://github.com/bengal/opencv-hand-detection)
+open source code found [here](https://github.com/bengal/opencv-hand-detection).
 
 In this blog post, I will explain the code in more detail. The code
 here does not include the modifications made for the lab, but is as directly
@@ -179,7 +179,7 @@ wide range of skin tone with respect to hue.
 Morphological transformations are done in binary images (true black
 or white). Morphological opening removes excess noise in an image.
 A really good link with lots of visuals explaining different types of morphological
-transformation can be found (here)[http://docs.opencv.org/trunk/doc/py_tutorials/py_imgproc/py_morphological_ops/py_morphological_ops.html]
+transformation can be found [here](http://docs.opencv.org/trunk/doc/py_tutorials/py_imgproc/py_morphological_ops/py_morphological_ops.html).
 
 ```c
 	/* Apply morphological opening */
