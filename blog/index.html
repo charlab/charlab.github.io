@@ -1,15 +1,83 @@
 ---
 layout: page
-title: "Blog"
-description: ""
-group: navigation
-blog_author_ids: [lbrann, relminyawi, afishberg, knlau, mngai, rpiersall, dshim, szwilliams, abagaria, fhannan, pjolly, dhpark, estorm, jspjut]
+title: Blog
+tagline: 
 ---
 {% include JB/setup %}
 
-{% for author_ids in page.blog_author_ids %}
-{% assign author = site.post_authors[author_ids] %}
-<h3 id="{{ author_ids }}">{{ author.display_name }}</h3>
-
-{% include custom/blog_no_author %}
+<!-- This loops through the paginated posts -->
+{% for post in paginator.posts %}
+  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <p class="author">
+	{% assign post_author = site.post_authors[post.author] %}
+    <a href="{{ site.url }}/people.html#{{ post.author }}">{{ post_author.display_name }}</a>
+      &raquo;
+      <span class="date">{{ post.date | date: "%d %B %Y"}}</span>
+  </p>
+  <!-- post content -->
+  <div class="post-content-truncate">
+       {% if post.content contains "<!-- more -->" %}
+         {{ post.content | split:"<!-- more -->" | first % }}
+       {% else %}
+         {{ post.content | strip_html | truncatewords:100 }}
+       {% endif %}
+  </div>
+  <div> <a href="{{ post.url }}">Read more...</a> </div>
+  <hr />
 {% endfor %}
+
+<!-- Pagination links -->
+<div class="pagination pagination-centered pagination-large">
+  <ul class="pagination">
+<!-- first page link -->
+{% if paginator.previous_page %}
+<li>
+  <a href="/blog/">&laquo;&laquo;</a>
+</li>
+{% else %}
+<li class="disabled">
+  <a href="#">&laquo;&laquo;</a>
+</li>
+{% endif %}
+
+<!-- previous page link -->
+{% if paginator.previous_page %}
+<li>
+  <a href="{{paginator.previous_page_path}}">&laquo;</a>
+</li>
+{% else %}
+<li class="disabled">
+  <a href="#">&laquo;</a>
+</li>
+{% endif %}
+
+<!-- current page -->
+<li class="active">
+  <a href="#">Page: {{paginator.page}} of
+	{{paginator.total_pages}}</a>
+</li>
+
+<!-- next page link -->
+{% if paginator.next_page %}
+<li>
+  <a href="{{paginator.next_page_path}}">&raquo;</a>
+</li>
+{% else %}
+<li class="disabled">
+  <a href="#">&raquo;</a>
+</li>
+{% endif %}
+
+<!-- last page link -->
+{% if paginator.next_page %}
+<li>
+  <a href="/blog/page{{ paginator.total_pages }}">&raquo;&raquo;</a>
+</li>
+{% else %}
+<li class="disabled">
+  <a href="#">&raquo;&raquo;</a>
+</li>
+{% endif %}
+  </ul>
+</div>
+

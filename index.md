@@ -28,4 +28,20 @@ updates as they make progress.
   {% endfor %}
   </ul>
 
+<p><a href="/blog/">All blog posts</a></p>
 
+<h2>Publications</h2>
+
+<ul>
+<li><a href="None">Dong-hyeon Park</a>, <a href="None">Akhil Bagaria</a>, <a href="None">Fabiha Hannan</a>, <a href="None">Eric Storm</a>, <strong><a href="http://josef.spjut.me">Josef Spjut</a></strong>;
+<strong>Sphynx: A Shared Instruction Cache Exporatory Study</strong>,
+<em>Tech Report, arXiv:1412.1140</em>,
+December 3, 2014.
+<a href="http://arxiv.org/abs/1412.1140">paper</a> <a class="ec" href="javascript:" onclick="e=document.getElementById('bibtr2').style;e.display=(e.display=='block'?'none':'block')">Bibtex</a><span id="bibtr2" class="b" style="display: none;"><pre>@inproceedings{parkbagaria14,
+ author = { Dong-hyeon Park and Akhil Bagaria and Fabiha Hannan and Eric Storm and Josef Spjut },
+ title = { {Sphynx: A Shared Instruction Cache Exporatory Study} },
+ year = {2014},
+ booktitle = {Tech Report, arXiv:1412.1140}
+}
+</pre></span></li>
+</ul>

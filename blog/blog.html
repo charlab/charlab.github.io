@@ -1,0 +1,15 @@
+---
+layout: page
+title: "Blog"
+description: ""
+group: navigation
+blog_author_ids: [lbrann, relminyawi, afishberg, knlau, mngai, rpiersall, dshim, szwilliams, abagaria, fhannan, pjolly, dhpark, estorm, jspjut]
+---
+{% include JB/setup %}
+
+{% for author_ids in page.blog_author_ids %}
+{% assign author = site.post_authors[author_ids] %}
+<h3 id="{{ author_ids }}">{{ author.display_name }}</h3>
+
+{% include custom/blog_no_author %}
+{% endfor %}
