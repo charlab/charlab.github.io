@@ -39,11 +39,10 @@ The following are sorted in order of submission deadline.
 * 11 June 2015: Final papers
 * 7-9 August 2015: Conference (Los Angeles, USA)
 
-###[SIGGRAPH Asia 2015](http://sa2014.siggraph.org/en/submitters.html)
-   (Speculative based on 2014)
+###[SIGGRAPH Asia 2015](http://sa2015.siggraph.org/en/)
 
-* ~1 June 2015: Papers deadline
-* ~3-6 December 2015: Conference (Asia)
+* May-June 2015: Papers deadline
+* 2-5 November 2015: Conference (Kobe, Japan)
 
 ###[I3D 2016](http://www.csee.umbc.edu/csee/research/vangogh/I3D2015/)
    (Speculative based on 2015)
