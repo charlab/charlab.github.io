@@ -33,7 +33,7 @@ updates as they make progress.
 <h2>Publications</h2>
 
 <ul>
-<li><a href="None">Dong-hyeon Park</a>, <a href="None">Akhil Bagaria</a>, <a href="None">Fabiha Hannan</a>, <a href="None">Eric Storm</a>, <strong><a href="http://josef.spjut.me">Josef Spjut</a></strong>;
+<li><a href="None">Dong-hyeon Park</a>, <a href="None">Akhil Bagaria</a>, <a href="None">Fabiha Hannan</a>, <a href="None">Eric Storm</a>, <a href="http://josef.spjut.me">Josef Spjut</a>;
 <strong>Sphynx: A Shared Instruction Cache Exporatory Study</strong>,
 <em>Tech Report, arXiv:1412.1140</em>,
 December 3, 2014.
