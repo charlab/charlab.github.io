@@ -44,6 +44,26 @@ post_authors :
     linkedin : josefspjut
 # email, web, twitter, github, linkedin all optional
 # recommended student job_title as "B.S. Engineering 2015"
+  jsung :
+    display_name : Jean Sung
+    job_title : B.S. Computer Science 2016
+    bio : '.'
+    email : jsung@g.hmc.edu
+    image : 
+    web : 
+    twitter : 
+    github : 
+    linkedin : 
+  skrupa :
+    display_name : Sebastian Krupa
+    job_title : B.S. Engineering 2016
+    bio : '.'
+    email : skrupa@g.hmc.edu
+    image : 
+    web : 
+    twitter : 
+    github : 
+    linkedin : 
   dshim :
     display_name : Da Eun Shim
     job_title : B.S. Engineering 2016
