@@ -67,7 +67,7 @@ If you try to run
 
 You won’t see the graphical output. You need to install plugins to play media files of following type: DivX MPEG-4 Version 3 Decoder.
 
-[Download plugins](labs.divx.com/DivXLinuxCodec)
+[Download plugins](http://labs.divx.com/DivXLinuxCodec)
 
 Follow README.linux.
 
